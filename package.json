@@ -4,9 +4,12 @@
   "description": "Vincent Kinney - AI-Native Product Architect & Founder",
   "scripts": {
     "dev": "next dev",
+    "generate:atlas": "node scripts/generate-project-atlas.mjs",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "check": "tsc --noEmit --incremental false",
+    "lint": "npm run check",
+    "verify": "npm run generate:atlas && npm run check && npm run build"
   },
   "dependencies": {
     "lucide-react": "^1.17.0",

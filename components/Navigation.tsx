@@ -9,6 +9,7 @@ export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
 
   const links = [
+    { href: '#proof', label: 'Proof' },
     { href: '#work', label: 'Work' },
     { href: '#atlas', label: 'Atlas' },
     { href: '#capabilities', label: 'Capabilities' },
@@ -42,7 +43,7 @@ export default function Navigation() {
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex gap-8 items-center">
+          <div className="hidden md:flex gap-5 lg:gap-8 items-center">
             {links.map((link) => (
               <a
                 key={link.href}

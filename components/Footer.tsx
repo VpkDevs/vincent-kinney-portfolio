@@ -11,6 +11,10 @@ export default function Footer() {
           <div className="group">
             <h4 className="font-semibold text-text mb-5 group-hover:text-accent transition-colors text-sm uppercase">Navigation</h4>
             <ul className="space-y-3">
+              <li><a href="#proof" className="text-sm text-text-secondary/80 hover:text-accent transition-all duration-300 inline-flex items-center gap-2">
+                <span className="w-1.5 h-1.5 bg-accent/0 group-hover:bg-accent rounded-full transition-all"></span>
+                Proof
+              </a></li>
               <li><a href="#work" className="text-sm text-text-secondary/80 hover:text-accent transition-all duration-300 inline-flex items-center gap-2">
                 <span className="w-1.5 h-1.5 bg-accent/0 group-hover:bg-accent rounded-full transition-all"></span>
                 Work

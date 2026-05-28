@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 const siteUrl = process.env.GITHUB_PAGES === 'true'
@@ -6,19 +6,37 @@ const siteUrl = process.env.GITHUB_PAGES === 'true'
   : 'https://vincentkinney.dev'
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: 'Vincent Kinney | AI-Native Product Architect & Founder',
-  description: 'I build AI-native software systems and turn a large project surface into public products, services, and proof.',
+  description: 'AI-native product portfolio, public project atlas, and AI App Rescue Audit offer from Vincent Kinney.',
+  authors: [{ name: 'Vincent Kinney' }],
+  alternates: {
+    canonical: siteUrl,
+  },
+  keywords: [
+    'AI product architect',
+    'AI app audit',
+    'project portfolio',
+    'software shipping',
+    'founder tools',
+  ],
   openGraph: {
-    title: 'Vincent Kinney',
-    description: 'AI-Native Product Architect & Founder',
+    title: 'Vincent Kinney | AI-Native Product Architect',
+    description: 'Public proof site, project atlas, and AI App Rescue Audit offer.',
     url: siteUrl,
+    siteName: 'Vincent Kinney Portfolio',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Vincent Kinney',
-    description: 'AI-Native Product Architect & Founder',
+    title: 'Vincent Kinney | AI-Native Product Architect',
+    description: 'Public proof site, project atlas, and AI App Rescue Audit offer.',
   },
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
 }
 
 export default function RootLayout({
@@ -28,10 +46,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </head>
       <body className="bg-surface text-text">
         {children}
       </body>

@@ -1,11 +1,22 @@
 'use client'
 
 import { useState, useEffect, useMemo } from 'react'
-import { ArrowRight, ChevronDown, Mail, GitBranch, ExternalLink, Search, Layers3, Code2 } from 'lucide-react'
+import {
+  ArrowRight,
+  ChevronDown,
+  Mail,
+  GitBranch,
+  ExternalLink,
+  Search,
+  Layers3,
+  Code2,
+  ShieldCheck,
+  Rocket,
+  ClipboardCheck,
+} from 'lucide-react'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import ProjectCard from '@/components/ProjectCard'
-import CapabilityCard from '@/components/CapabilityCard'
 import ContactForm from '@/components/ContactForm'
 import { projectAtlas } from '@/data/projectAtlas'
 
@@ -178,6 +189,42 @@ People who want games that respect their intelligence. People in recovery who se
     },
   ]
 
+  const proofLedger = [
+    {
+      label: 'Live artifact',
+      value: 'Portfolio deployed',
+      detail: 'GitHub Pages is serving the hardened public site.',
+      href: 'https://vpkdevs.github.io/vincent-kinney-portfolio/'
+    },
+    {
+      label: 'Source',
+      value: 'Public repo',
+      detail: 'Code, history, and static Pages branch are public.',
+      href: 'https://github.com/VpkDevs/vincent-kinney-portfolio'
+    },
+    {
+      label: 'Security posture',
+      value: 'Audit clean',
+      detail: 'Next 16 / React 19 build with local npm audit at zero vulnerabilities.',
+      href: '#audit'
+    },
+  ]
+
+  const shippingSteps = [
+    { name: 'Deployed', status: 'done', detail: 'Live URL verified.' },
+    { name: 'Hardened', status: 'done', detail: 'Static-safe contact, accessibility, dependency pass.' },
+    { name: 'Distributed', status: 'next', detail: 'Public post/outreach still pending.' },
+    { name: 'Revenue', status: 'open', detail: 'Audit offer is live; first buyer is the next proof.' },
+  ]
+
+  const auditDeliverables = [
+    'Ship-readiness score with blunt recommendation',
+    'Top blockers, ranked by revenue and launch risk',
+    'README / landing page rewrite',
+    'Smallest public version and 7-day action plan',
+    'Pricing, buyer, and distribution angle',
+  ]
+
   const atlasCategories = useMemo(() => {
     const categories = new Map<string, { label: string; count: number }>()
 
@@ -214,7 +261,7 @@ People who want games that respect their intelligence. People in recovery who se
 
   return (
     <div id="top" className="min-h-screen bg-surface">
-      <a href="#work" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-md focus:bg-accent focus:px-4 focus:py-2 focus:text-surface focus:shadow-lg">
+      <a href="#proof" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-md focus:bg-accent focus:px-4 focus:py-2 focus:text-surface focus:shadow-lg">
         Skip to main content
       </a>
       <Navigation />
@@ -227,11 +274,11 @@ People who want games that respect their intelligence. People in recovery who se
       {/* HERO SECTION */}
       <section className="relative overflow-hidden pt-40 pb-28 px-6">
         <div className="max-w-6xl mx-auto">
-          {/* Background elements */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <div className="absolute top-20 right-0 w-[600px] h-[600px] bg-accent opacity-8 rounded-full blur-3xl -z-10"></div>
-            <div className="absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-accent opacity-5 rounded-full blur-3xl -z-10"></div>
             <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent to-transparent opacity-20"></div>
+            <div className="absolute inset-x-0 top-28 h-px bg-border/40"></div>
+            <div className="absolute inset-x-0 top-56 h-px bg-border/25"></div>
+            <div className="absolute inset-y-0 right-1/4 w-px bg-border/25"></div>
           </div>
 
           <div className="space-y-8 fade-in relative z-10">
@@ -240,7 +287,7 @@ People who want games that respect their intelligence. People in recovery who se
                 I build AI-native software systems and experiences.
               </h1>
               <p className="text-lg md:text-xl text-text-secondary max-w-3xl leading-relaxed">
-                Founder-grade products that combine technical depth with unusual speed. <span className="text-text">Shipwright automates the full software lifecycle. Narrative Engine reimagines how AI directs interactive worlds. Shadowlight explores real human struggles through dark fantasy.</span>
+                Founder-grade products that combine technical depth with unusual speed. <span className="text-text">This site is the first public proof artifact in a larger push: turn a huge private build surface into shipped work, useful services, and revenue.</span>
               </p>
             </div>
 
@@ -248,6 +295,9 @@ People who want games that respect their intelligence. People in recovery who se
               <a href="#work" className="btn btn-primary group">
                 View Featured Work
                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+              </a>
+              <a href="#proof" className="btn btn-secondary">
+                See Live Proof
               </a>
               <a href="#atlas" className="btn btn-secondary">
                 Explore Project Atlas
@@ -260,9 +310,74 @@ People who want games that respect their intelligence. People in recovery who se
             {/* Scroll indicator */}
             <div className="pt-12 hidden sm:flex items-center text-text-secondary text-sm">
               <span>Scroll to explore</span>
-              <svg className="ml-2 w-4 h-4 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="ml-2 w-4 h-4 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
               </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PUBLIC PROOF SECTION */}
+      <section id="proof" className="py-20 px-6 border-t border-border">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 lg:gap-14 items-start">
+            <div>
+              <p className="text-accent font-semibold mb-3">Public Proof</p>
+              <h2 className="text-4xl md:text-5xl font-bold mb-4">Deployed work beats private ambition.</h2>
+              <p className="text-text-secondary text-lg leading-relaxed max-w-3xl">
+                The honest status is better than pretending: this portfolio is live, hardened, and public. It is not fully shipped by my own standard until distribution happens, but the proof loop has started.
+              </p>
+              <div className="h-1 w-20 bg-gradient-to-r from-accent to-transparent mt-6"></div>
+
+              <div className="mt-10 grid sm:grid-cols-2 gap-4">
+                {shippingSteps.map((step) => (
+                  <div key={step.name} className="rounded-lg border border-border/60 bg-surface/70 p-5">
+                    <div className="mb-3 flex items-center justify-between gap-3">
+                      <h3 className="text-lg font-bold text-text">{step.name}</h3>
+                      <span className={`rounded-md border px-2 py-1 text-xs font-semibold ${
+                        step.status === 'done'
+                          ? 'border-accent/40 bg-accent/10 text-accent'
+                          : step.status === 'next'
+                            ? 'border-yellow-500/40 bg-yellow-500/10 text-yellow-300'
+                            : 'border-border/70 bg-surface-secondary text-text-secondary'
+                      }`}>
+                        {step.status === 'done' ? 'Done' : step.status === 'next' ? 'Next' : 'Open'}
+                      </span>
+                    </div>
+                    <p className="text-sm text-text-secondary leading-relaxed">{step.detail}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="lg:pt-2">
+              <div className="mb-6 flex items-center gap-3">
+                <ShieldCheck size={26} className="text-accent" aria-hidden="true" />
+                <div>
+                  <h3 className="text-2xl font-bold">Proof Ledger</h3>
+                  <p className="text-sm text-text-secondary">The claims that can be checked right now.</p>
+                </div>
+              </div>
+
+              <div className="space-y-4">
+                {proofLedger.map((item) => (
+                  <a
+                    key={item.label}
+                    href={item.href}
+                    target={item.href.startsWith('http') ? '_blank' : undefined}
+                    rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                    className="block rounded-lg border border-border/60 bg-surface/70 p-4 hover:border-accent/50 hover:bg-surface-tertiary/30 transition-colors"
+                  >
+                    <div className="mb-1 flex items-center justify-between gap-3">
+                      <span className="text-xs font-semibold uppercase text-accent">{item.label}</span>
+                      <ExternalLink size={14} className="text-text-secondary" aria-hidden="true" />
+                    </div>
+                    <p className="font-bold text-text">{item.value}</p>
+                    <p className="mt-1 text-sm text-text-secondary leading-relaxed">{item.detail}</p>
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -537,6 +652,27 @@ People who want games that respect their intelligence. People in recovery who se
                 </div>
               </div>
             ))}
+          </div>
+
+          <div className="grid lg:grid-cols-[0.8fr_1.2fr] gap-6 lg:gap-8 mb-10">
+            <div className="rounded-lg border border-border/60 bg-surface/70 p-6">
+              <div className="mb-4 flex items-center gap-3">
+                <Rocket size={24} className="text-accent" aria-hidden="true" />
+                <h3 className="text-2xl font-bold">What You Actually Get</h3>
+              </div>
+              <p className="text-text-secondary leading-relaxed">
+                Not vague consulting. A concrete operating memo that tells you whether your app should ship, simplify, reposition, or pause.
+              </p>
+            </div>
+
+            <div className="grid sm:grid-cols-2 gap-3">
+              {auditDeliverables.map((deliverable) => (
+                <div key={deliverable} className="flex gap-3 rounded-lg border border-border/60 bg-surface/70 p-4">
+                  <ClipboardCheck size={18} className="mt-0.5 flex-shrink-0 text-accent" aria-hidden="true" />
+                  <p className="text-sm text-text-secondary leading-relaxed">{deliverable}</p>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className="rounded-lg border border-accent/30 bg-accent/5 p-6 md:p-8">
