@@ -34,7 +34,7 @@ export default function Navigation() {
     }`}>
       <div className="max-w-6xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <a href="#" className="text-xl font-bold tracking-tight hover:text-accent transition-all duration-300 group">
+          <a href="#top" className="text-xl font-bold hover:text-accent transition-all duration-300 group" aria-label="Back to top">
             <span className="relative">
               Vincent Kinney
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent group-hover:w-full transition-all duration-300"></span>
@@ -59,6 +59,9 @@ export default function Navigation() {
           <button
             className="md:hidden p-2 hover:text-accent transition-colors"
             onClick={() => setIsOpen(!isOpen)}
+            aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
+            aria-expanded={isOpen}
+            aria-controls="mobile-navigation"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -66,7 +69,7 @@ export default function Navigation() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden mt-4 pb-4 flex flex-col gap-4 border-t border-border pt-4">
+          <div id="mobile-navigation" className="md:hidden mt-4 pb-4 flex flex-col gap-4 border-t border-border pt-4">
             {links.map((link) => (
               <a
                 key={link.href}

@@ -1,4 +1,4 @@
-import { Mail, Github, Twitter } from 'lucide-react'
+import { Mail, GitBranch, ExternalLink } from 'lucide-react'
 
 export default function Footer() {
   return (
@@ -9,7 +9,7 @@ export default function Footer() {
 
         <div className="grid md:grid-cols-4 gap-10 mb-12">
           <div className="group">
-            <h4 className="font-semibold text-text mb-5 group-hover:text-accent transition-colors text-sm uppercase tracking-wider">Navigation</h4>
+            <h4 className="font-semibold text-text mb-5 group-hover:text-accent transition-colors text-sm uppercase">Navigation</h4>
             <ul className="space-y-3">
               <li><a href="#work" className="text-sm text-text-secondary/80 hover:text-accent transition-all duration-300 inline-flex items-center gap-2">
                 <span className="w-1.5 h-1.5 bg-accent/0 group-hover:bg-accent rounded-full transition-all"></span>
@@ -39,7 +39,7 @@ export default function Footer() {
           </div>
 
           <div className="group">
-            <h4 className="font-semibold text-text mb-5 group-hover:text-accent transition-colors text-sm uppercase tracking-wider">Featured</h4>
+            <h4 className="font-semibold text-text mb-5 group-hover:text-accent transition-colors text-sm uppercase">Featured</h4>
             <ul className="space-y-3">
               <li><a href="#work" className="text-sm text-text-secondary/80 hover:text-accent transition-all duration-300 inline-flex items-center gap-2">
                 <span>🚀</span>
@@ -57,29 +57,29 @@ export default function Footer() {
           </div>
 
           <div className="group">
-            <h4 className="font-semibold text-text mb-5 group-hover:text-accent transition-colors text-sm uppercase tracking-wider">Connect</h4>
+            <h4 className="font-semibold text-text mb-5 group-hover:text-accent transition-colors text-sm uppercase">Connect</h4>
             <ul className="space-y-3">
               <li><a href="mailto:vincekinney1991@gmail.com" className="text-sm text-text-secondary/80 hover:text-accent transition-all duration-300 inline-flex items-center gap-2">
                 <Mail size={16} className="opacity-0 group-hover:opacity-100 transition-opacity" />
                 Email
               </a></li>
-              <li><a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-sm text-text-secondary/80 hover:text-accent transition-all duration-300 inline-flex items-center gap-2">
-                <Github size={16} className="opacity-0 group-hover:opacity-100 transition-opacity" />
+              <li><a href="https://github.com/VpkDevs" target="_blank" rel="noopener noreferrer" className="text-sm text-text-secondary/80 hover:text-accent transition-all duration-300 inline-flex items-center gap-2">
+                <GitBranch size={16} className="opacity-0 group-hover:opacity-100 transition-opacity" />
                 GitHub
               </a></li>
-              <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-sm text-text-secondary/80 hover:text-accent transition-all duration-300 inline-flex items-center gap-2">
-                <Twitter size={16} className="opacity-0 group-hover:opacity-100 transition-opacity" />
-                Twitter
+              <li><a href="https://github.com/VpkDevs/vincent-kinney-portfolio" target="_blank" rel="noopener noreferrer" className="text-sm text-text-secondary/80 hover:text-accent transition-all duration-300 inline-flex items-center gap-2">
+                <ExternalLink size={16} className="opacity-0 group-hover:opacity-100 transition-opacity" />
+                Source
               </a></li>
             </ul>
           </div>
 
           <div className="group">
-            <h4 className="font-semibold text-text mb-5 group-hover:text-accent transition-colors text-sm uppercase tracking-wider">Info</h4>
+            <h4 className="font-semibold text-text mb-5 group-hover:text-accent transition-colors text-sm uppercase">Info</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-sm text-text-secondary/80 hover:text-accent transition-all duration-300">Privacy</a></li>
-              <li><a href="#" className="text-sm text-text-secondary/80 hover:text-accent transition-all duration-300">Terms</a></li>
-              <li><a href="#" className="text-sm text-text-secondary/80 hover:text-accent transition-all duration-300">Status</a></li>
+              <li><a href="#audit" className="text-sm text-text-secondary/80 hover:text-accent transition-all duration-300">Audit Offer</a></li>
+              <li><a href="#atlas" className="text-sm text-text-secondary/80 hover:text-accent transition-all duration-300">Project Atlas</a></li>
+              <li><a href="mailto:vincekinney1991@gmail.com?subject=Portfolio%20question" className="text-sm text-text-secondary/80 hover:text-accent transition-all duration-300">Questions</a></li>
             </ul>
           </div>
         </div>

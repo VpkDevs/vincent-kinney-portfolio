@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect, useMemo } from 'react'
-import { ArrowRight, ChevronDown, Mail, Github, Twitter, ExternalLink, Search, Layers3, Code2 } from 'lucide-react'
+import { ArrowRight, ChevronDown, Mail, GitBranch, ExternalLink, Search, Layers3, Code2 } from 'lucide-react'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import ProjectCard from '@/components/ProjectCard'
@@ -213,8 +213,16 @@ People who want games that respect their intelligence. People in recovery who se
   )
 
   return (
-    <div className="min-h-screen bg-surface">
+    <div id="top" className="min-h-screen bg-surface">
+      <a href="#work" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-md focus:bg-accent focus:px-4 focus:py-2 focus:text-surface focus:shadow-lg">
+        Skip to main content
+      </a>
       <Navigation />
+      <noscript>
+        <div className="border-b border-accent/30 bg-accent/10 px-6 py-3 text-center text-sm text-text-secondary">
+          This portfolio is readable without JavaScript. Search, filters, and expandable case studies need JavaScript enabled.
+        </div>
+      </noscript>
 
       {/* HERO SECTION */}
       <section className="relative overflow-hidden pt-40 pb-28 px-6">
@@ -228,7 +236,7 @@ People who want games that respect their intelligence. People in recovery who se
 
           <div className="space-y-8 fade-in relative z-10">
             <div className="space-y-6">
-              <h1 className="text-6xl md:text-7xl xl:text-8xl font-bold leading-tight tracking-tight">
+              <h1 className="text-6xl md:text-7xl xl:text-8xl font-bold leading-tight">
                 I build AI-native software systems and experiences.
               </h1>
               <p className="text-lg md:text-xl text-text-secondary max-w-3xl leading-relaxed">
@@ -326,6 +334,7 @@ People who want games that respect their intelligence. People in recovery who se
                 <button
                   key={item.category}
                   onClick={() => setAtlasCategory(item.category)}
+                  aria-pressed={atlasCategory === item.category}
                   className={`inline-flex items-center gap-2 rounded-md border px-3 py-2 text-sm transition-all duration-300 ${
                     atlasCategory === item.category
                       ? 'border-accent bg-accent text-surface shadow-lg shadow-accent/20'
@@ -395,6 +404,7 @@ People who want games that respect their intelligence. People in recovery who se
                             href={project.remote.replace(/\.git$/, '')}
                             target="_blank"
                             rel="noopener noreferrer"
+                            aria-label={`Open ${project.name} repository`}
                             className="inline-flex items-center gap-1 text-accent hover:text-text"
                           >
                             Repo <ExternalLink size={14} />
@@ -609,11 +619,11 @@ People who want games that respect their intelligence. People in recovery who se
             <a href="mailto:vincekinney1991@gmail.com" className="text-text-secondary hover:text-accent transition-colors flex items-center gap-2">
               <Mail size={20} /> Email
             </a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-accent transition-colors flex items-center gap-2">
-              <Github size={20} /> GitHub
+            <a href="https://github.com/VpkDevs" target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-accent transition-colors flex items-center gap-2">
+              <GitBranch size={20} /> GitHub
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-accent transition-colors flex items-center gap-2">
-              <Twitter size={20} /> Twitter
+            <a href="https://github.com/VpkDevs/vincent-kinney-portfolio" target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-accent transition-colors flex items-center gap-2">
+              <ExternalLink size={20} /> Source
             </a>
           </div>
         </div>

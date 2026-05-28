@@ -1,14 +1,14 @@
 'use client'
 
 import { useState } from 'react'
-import { Mail, ArrowRight } from 'lucide-react'
+import { Mail, ArrowRight, AlertCircle } from 'lucide-react'
 
 interface ContactFormProps {
   type: 'partnership' | 'product' | 'general'
 }
 
 export default function ContactForm({ type }: ContactFormProps) {
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
+  const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle')
   const [formData, setFormData] = useState({
     email: '',
     message: '',
@@ -17,17 +17,25 @@ export default function ContactForm({ type }: ContactFormProps) {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setStatus('loading')
 
-    try {
-      // Simulate form submission
-      // In production, this would send to your backend
-      await new Promise(resolve => setTimeout(resolve, 1000))
-      setStatus('success')
-      setFormData({ email: '', message: '', product: type === 'product' ? '' : undefined })
-    } catch (error) {
+    const trimmedEmail = formData.email.trim()
+    const trimmedMessage = formData.message.trim()
+
+    const validEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(trimmedEmail)
+
+    if (!validEmail || !trimmedMessage) {
       setStatus('error')
+      return
     }
+
+    const productLine = type === 'product' && formData.product
+      ? `Product: ${formData.product}\n\n`
+      : ''
+    const subject = encodeURIComponent(`[Portfolio] ${labels[type].title}`)
+    const body = encodeURIComponent(`From: ${trimmedEmail}\n\n${productLine}${trimmedMessage}`)
+
+    window.location.href = `mailto:vincekinney1991@gmail.com?subject=${subject}&body=${body}`
+    setStatus('success')
   }
 
   const labels = {
@@ -52,37 +60,45 @@ export default function ContactForm({ type }: ContactFormProps) {
       <div className="relative z-10">
         {status === 'success' ? (
           <div className="text-center space-y-4 py-8">
-            <div className="text-6xl animate-bounce">✓</div>
-            <h4 className="text-xl font-bold text-accent">Message sent!</h4>
-            <p className="text-text-secondary">I'll get back to you within 48 hours.</p>
+            <Mail size={44} className="mx-auto text-accent" aria-hidden="true" />
+            <h4 className="text-xl font-bold text-accent">Email draft opened</h4>
+            <p className="text-text-secondary">
+              Send the draft from your email client. If it did not open, email me directly at{' '}
+              <a href="mailto:vincekinney1991@gmail.com" className="text-accent hover:text-text break-all">
+                vincekinney1991@gmail.com
+              </a>.
+            </p>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="space-y-5">
+          <form onSubmit={handleSubmit} className="space-y-5" noValidate>
           <div>
-            <label className="block text-sm font-semibold text-text mb-3">
+            <label htmlFor={`${type}-email`} className="block text-sm font-semibold text-text mb-3">
               Email
             </label>
             <input
+              id={`${type}-email`}
               type="email"
               required
+              maxLength={120}
+              autoComplete="email"
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
               placeholder="you@example.com"
               className="w-full"
-              disabled={status === 'loading'}
+              aria-describedby={`${type}-contact-hint`}
             />
           </div>
 
           {type === 'product' && (
             <div>
-              <label className="block text-sm font-semibold text-text mb-3">
+              <label htmlFor={`${type}-product`} className="block text-sm font-semibold text-text mb-3">
                 Which product?
               </label>
               <select
+                id={`${type}-product`}
                 value={formData.product || ''}
                 onChange={(e) => setFormData({ ...formData, product: e.target.value })}
                 className="w-full"
-                disabled={status === 'loading'}
               >
                 <option value="">Select a product</option>
                 <option value="shipwright">Shipwright</option>
@@ -93,32 +109,39 @@ export default function ContactForm({ type }: ContactFormProps) {
           )}
 
           <div>
-            <label className="block text-sm font-semibold text-text mb-3">
+            <label htmlFor={`${type}-message`} className="block text-sm font-semibold text-text mb-3">
               Message
             </label>
             <textarea
+              id={`${type}-message`}
               required
+              maxLength={2000}
               value={formData.message}
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}
               placeholder={labels[type].placeholder}
               rows={4}
               className="w-full resize-none"
-              disabled={status === 'loading'}
+              aria-describedby={`${type}-contact-hint`}
             />
+            <p id={`${type}-contact-hint`} className="mt-2 text-xs text-text-secondary/70">
+              Static-site safe: this opens a prefilled email draft instead of pretending to submit to a backend.
+            </p>
           </div>
 
           <button
             type="submit"
-            disabled={status === 'loading'}
             className="w-full btn btn-secondary group"
           >
-            {status === 'loading' ? 'Sending...' : 'Send Message'}
-            {status !== 'loading' && <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />}
+            Open Email Draft
+            <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" aria-hidden="true" />
           </button>
 
           {status === 'error' && (
-            <div className="p-4 bg-red-500/10 border border-red-500/30 rounded-lg">
-              <p className="text-sm text-red-400">Something went wrong. Please try again.</p>
+            <div className="p-4 bg-red-500/10 border border-red-500/30 rounded-lg" role="alert">
+              <p className="text-sm text-red-400 flex items-start gap-2">
+                <AlertCircle size={16} className="mt-0.5 flex-shrink-0" aria-hidden="true" />
+                Enter a valid email and message before opening the draft.
+              </p>
             </div>
           )}
         </form>

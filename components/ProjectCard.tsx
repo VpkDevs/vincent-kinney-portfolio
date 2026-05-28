@@ -29,6 +29,8 @@ export default function ProjectCard({ project, isExpanded, onToggle }: ProjectCa
       <button
         onClick={onToggle}
         className="w-full p-8 md:p-10 text-left hover:bg-surface-tertiary/50 transition-colors duration-300 group"
+        aria-expanded={isExpanded}
+        aria-controls={`${project.id}-details`}
       >
         <div className="flex items-start justify-between gap-6">
           <div className="flex-1">
@@ -39,7 +41,7 @@ export default function ProjectCard({ project, isExpanded, onToggle }: ProjectCa
                   <h3 className="text-2xl md:text-3xl font-bold text-text">{project.name}</h3>
                   <span className="text-xs font-medium px-2 py-1 bg-accent/10 text-accent rounded-full">{project.status}</span>
                 </div>
-                <p className="text-xs uppercase tracking-wider text-text-secondary/70 font-medium">{project.category}</p>
+                <p className="text-xs uppercase text-text-secondary/70 font-medium">{project.category}</p>
               </div>
             </div>
 
@@ -71,7 +73,7 @@ export default function ProjectCard({ project, isExpanded, onToggle }: ProjectCa
       </button>
 
       {isExpanded && (
-        <div className="px-8 md:px-10 py-10 bg-gradient-to-b from-surface-tertiary/20 to-surface border-t border-accent/20">
+        <div id={`${project.id}-details`} className="px-8 md:px-10 py-10 bg-gradient-to-b from-surface-tertiary/20 to-surface border-t border-accent/20">
           <div className="prose prose-invert max-w-none space-y-4 animate-fadeIn">
             {project.caseStudy.split('\n\n').map((paragraph, idx) => {
               if (paragraph.startsWith('##')) {

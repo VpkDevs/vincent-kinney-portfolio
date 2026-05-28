@@ -28,8 +28,9 @@ body {
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
   line-height: 1.2;
+  overflow-wrap: anywhere;
 }
 
 h1 {
@@ -59,6 +60,7 @@ h3 {
 p {
   line-height: 1.7;
   color: #b8b8b8;
+  overflow-wrap: anywhere;
 }
 
 strong {
@@ -189,7 +191,7 @@ a:hover::after {
 }
 
 /* Inputs */
-input, textarea {
+input, textarea, select {
   background-color: rgba(26, 26, 26, 0.8);
   border: 1px solid rgba(51, 51, 51, 0.8);
   color: #f5f5f5;
@@ -205,7 +207,7 @@ input::placeholder, textarea::placeholder {
   color: #666666;
 }
 
-input:focus, textarea:focus {
+input:focus, textarea:focus, select:focus {
   outline: none;
   border-color: #4d63ff;
   box-shadow: 0 0 0 3px rgba(77, 99, 255, 0.15);
@@ -390,4 +392,28 @@ button:active {
 
 input:active, textarea:active {
   border-color: #6a7bff;
+}
+
+:focus-visible {
+  outline: 2px solid #7a8eff;
+  outline-offset: 3px;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  box-shadow: 0 0 0 4px rgba(77, 99, 255, 0.24);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }
