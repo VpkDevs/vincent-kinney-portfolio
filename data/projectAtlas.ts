@@ -8,6 +8,9 @@ export type ProjectAtlasItem = {
   category: string
   categoryLabel: string
   focus: string
+  description: string
+  bestUse: string
+  nextAction: string
   status: 'Public repo' | 'Private/local'
   lastActive: string
   remote?: string
@@ -21,6 +24,9 @@ export const projectAtlas = [
     "category": "ai",
     "categoryLabel": "AI Systems",
     "focus": "LLM infrastructure, prompt systems, and agent workflows",
+    "description": "Cerebras is part of Vincent's AI systems work, with catalog signals pointing toward model infrastructure and performance experimentation. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as an AI systems proof point for builders who need leverage from models, agents, local inference, or AI-assisted workflows.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the strongest workflow into a reproducible demo with a clear before/after result.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/cerebras.git"
@@ -32,6 +38,9 @@ export const projectAtlas = [
     "category": "ai",
     "categoryLabel": "AI Systems",
     "focus": "LLM infrastructure, prompt systems, and agent workflows",
+    "description": "Cline is part of Vincent's AI systems work, with catalog signals pointing toward AI-assisted development and agent workflow design and local workflow automation and desktop utility. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as an AI systems proof point for builders who need leverage from models, agents, local inference, or AI-assisted workflows.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the strongest workflow into a reproducible demo with a clear before/after result.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/Cline.git"
@@ -43,6 +52,9 @@ export const projectAtlas = [
     "category": "ai",
     "categoryLabel": "AI Systems",
     "focus": "LLM infrastructure, prompt systems, and agent workflows",
+    "description": "Cline Fork 3 20 is part of Vincent's AI systems work, with catalog signals pointing toward AI-assisted development and agent workflow design and local workflow automation and desktop utility. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as an AI systems proof point for builders who need leverage from models, agents, local inference, or AI-assisted workflows.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the strongest workflow into a reproducible demo with a clear before/after result.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/cline-3.20.1.git"
@@ -54,6 +66,9 @@ export const projectAtlas = [
     "category": "ai",
     "categoryLabel": "AI Systems",
     "focus": "LLM infrastructure, prompt systems, and agent workflows",
+    "description": "Code Assistant is part of Vincent's AI systems work, with catalog signals pointing toward AI-assisted development and agent workflow design. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Sep 2025. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as an AI systems proof point for builders who need leverage from models, agents, local inference, or AI-assisted workflows.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the strongest workflow into a reproducible demo with a clear before/after result.",
     "status": "Public repo",
     "lastActive": "Sep 2025",
     "remote": "https://github.com/VpkDevs/code-assistant-companion-tool.git"
@@ -65,6 +80,9 @@ export const projectAtlas = [
     "category": "ai",
     "categoryLabel": "AI Systems",
     "focus": "LLM infrastructure, prompt systems, and agent workflows",
+    "description": "Comfyui is part of Vincent's AI systems work, with catalog signals pointing toward creative generation pipelines and multimodal output. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Local build. It is currently cataloged as private or local, so the first job is to verify what runs, what is valuable, and whether a public slice can be safely exposed.",
+    "bestUse": "Best used as an AI systems proof point for builders who need leverage from models, agents, local inference, or AI-assisted workflows.",
+    "nextAction": "Next pass: open the local folder and confirm the current runnable state, then turn the strongest workflow into a reproducible demo with a clear before/after result.",
     "status": "Private/local",
     "lastActive": "Local build"
   },
@@ -75,6 +93,9 @@ export const projectAtlas = [
     "category": "ai",
     "categoryLabel": "AI Systems",
     "focus": "LLM infrastructure, prompt systems, and agent workflows",
+    "description": "Dyad Builder is part of Vincent's AI systems work, with catalog signals pointing toward product exploration, implementation practice, and shipping potential. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Sep 2025. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as an AI systems proof point for builders who need leverage from models, agents, local inference, or AI-assisted workflows.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the strongest workflow into a reproducible demo with a clear before/after result.",
     "status": "Public repo",
     "lastActive": "Sep 2025",
     "remote": "https://github.com/VpkDevs/dyad-local-ai-app-builder.git"
@@ -86,6 +107,9 @@ export const projectAtlas = [
     "category": "ai",
     "categoryLabel": "AI Systems",
     "focus": "LLM infrastructure, prompt systems, and agent workflows",
+    "description": "Image Gen Stable Diffusion is part of Vincent's AI systems work, with catalog signals pointing toward creative generation pipelines and multimodal output. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Oct 2025. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as an AI systems proof point for builders who need leverage from models, agents, local inference, or AI-assisted workflows.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the strongest workflow into a reproducible demo with a clear before/after result.",
     "status": "Public repo",
     "lastActive": "Oct 2025",
     "remote": "https://github.com/VpkDevs/ai-image-generator-stable-diffusion.git"
@@ -97,6 +121,9 @@ export const projectAtlas = [
     "category": "ai",
     "categoryLabel": "AI Systems",
     "focus": "LLM infrastructure, prompt systems, and agent workflows",
+    "description": "LLM Server Backend is part of Vincent's AI systems work, with catalog signals pointing toward service architecture and data-backed product infrastructure. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Oct 2025. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as an AI systems proof point for builders who need leverage from models, agents, local inference, or AI-assisted workflows.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the strongest workflow into a reproducible demo with a clear before/after result.",
     "status": "Public repo",
     "lastActive": "Oct 2025",
     "remote": "https://github.com/VpkDevs/ai-llm-server-backend.git"
@@ -108,6 +135,9 @@ export const projectAtlas = [
     "category": "ai",
     "categoryLabel": "AI Systems",
     "focus": "LLM infrastructure, prompt systems, and agent workflows",
+    "description": "LLM Server Koboldcpp is part of Vincent's AI systems work, with catalog signals pointing toward service architecture and data-backed product infrastructure. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as an AI systems proof point for builders who need leverage from models, agents, local inference, or AI-assisted workflows.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the strongest workflow into a reproducible demo with a clear before/after result.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/ai-llm-server-koboldcpp.git"
@@ -119,6 +149,9 @@ export const projectAtlas = [
     "category": "ai",
     "categoryLabel": "AI Systems",
     "focus": "LLM infrastructure, prompt systems, and agent workflows",
+    "description": "Machine Man Translator is part of Vincent's AI systems work, with catalog signals pointing toward product exploration, implementation practice, and shipping potential. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as an AI systems proof point for builders who need leverage from models, agents, local inference, or AI-assisted workflows.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the strongest workflow into a reproducible demo with a clear before/after result.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/MACHINE-AND-MAN-TRANSLATOR.git"
@@ -130,6 +163,9 @@ export const projectAtlas = [
     "category": "ai",
     "categoryLabel": "AI Systems",
     "focus": "LLM infrastructure, prompt systems, and agent workflows",
+    "description": "Narrative Engine is part of Vincent's AI systems work, with catalog signals pointing toward playable narrative systems and worldbuilding. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as an AI systems proof point for builders who need leverage from models, agents, local inference, or AI-assisted workflows.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the strongest workflow into a reproducible demo with a clear before/after result.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/narrativeEngine.git"
@@ -141,6 +177,9 @@ export const projectAtlas = [
     "category": "ai",
     "categoryLabel": "AI Systems",
     "focus": "LLM infrastructure, prompt systems, and agent workflows",
+    "description": "Prompt Enhancer is part of Vincent's AI systems work, with catalog signals pointing toward AI-assisted development and agent workflow design. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as an AI systems proof point for builders who need leverage from models, agents, local inference, or AI-assisted workflows.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the strongest workflow into a reproducible demo with a clear before/after result.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/promptEnhancer.git"
@@ -152,6 +191,9 @@ export const projectAtlas = [
     "category": "ai",
     "categoryLabel": "AI Systems",
     "focus": "LLM infrastructure, prompt systems, and agent workflows",
+    "description": "Prompt Library is part of Vincent's AI systems work, with catalog signals pointing toward AI-assisted development and agent workflow design. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Local build. It is currently cataloged as private or local, so the first job is to verify what runs, what is valuable, and whether a public slice can be safely exposed.",
+    "bestUse": "Best used as an AI systems proof point for builders who need leverage from models, agents, local inference, or AI-assisted workflows.",
+    "nextAction": "Next pass: open the local folder and confirm the current runnable state, then turn the strongest workflow into a reproducible demo with a clear before/after result.",
     "status": "Private/local",
     "lastActive": "Local build"
   },
@@ -162,6 +204,9 @@ export const projectAtlas = [
     "category": "ai",
     "categoryLabel": "AI Systems",
     "focus": "LLM infrastructure, prompt systems, and agent workflows",
+    "description": "Prompt Producer is part of Vincent's AI systems work, with catalog signals pointing toward AI-assisted development and agent workflow design. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as an AI systems proof point for builders who need leverage from models, agents, local inference, or AI-assisted workflows.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the strongest workflow into a reproducible demo with a clear before/after result.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/EXPERIMENTAL-PROMPT-PRODUCER.git"
@@ -173,6 +218,9 @@ export const projectAtlas = [
     "category": "ai",
     "categoryLabel": "AI Systems",
     "focus": "LLM infrastructure, prompt systems, and agent workflows",
+    "description": "Prompt Suite is part of Vincent's AI systems work, with catalog signals pointing toward AI-assisted development and agent workflow design. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Oct 2025. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as an AI systems proof point for builders who need leverage from models, agents, local inference, or AI-assisted workflows.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the strongest workflow into a reproducible demo with a clear before/after result.",
     "status": "Public repo",
     "lastActive": "Oct 2025",
     "remote": "https://github.com/VpkDevs/ai-prompt-management-suite.git"
@@ -184,6 +232,9 @@ export const projectAtlas = [
     "category": "ai",
     "categoryLabel": "AI Systems",
     "focus": "LLM infrastructure, prompt systems, and agent workflows",
+    "description": "Story Gen is part of Vincent's AI systems work, with catalog signals pointing toward playable narrative systems and worldbuilding. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Sep 2025. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as an AI systems proof point for builders who need leverage from models, agents, local inference, or AI-assisted workflows.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the strongest workflow into a reproducible demo with a clear before/after result.",
     "status": "Public repo",
     "lastActive": "Sep 2025",
     "remote": "https://github.com/VpkDevs/story-generator-narrative-engine.git"
@@ -195,6 +246,9 @@ export const projectAtlas = [
     "category": "ai",
     "categoryLabel": "AI Systems",
     "focus": "LLM infrastructure, prompt systems, and agent workflows",
+    "description": "Ultimate is part of Vincent's AI systems work, with catalog signals pointing toward product exploration, implementation practice, and shipping potential. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as an AI systems proof point for builders who need leverage from models, agents, local inference, or AI-assisted workflows.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the strongest workflow into a reproducible demo with a clear before/after result.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/Ultimate-AI.git"
@@ -206,6 +260,9 @@ export const projectAtlas = [
     "category": "ai",
     "categoryLabel": "AI Systems",
     "focus": "LLM infrastructure, prompt systems, and agent workflows",
+    "description": "Vibe Buddy is part of Vincent's AI systems work, with catalog signals pointing toward product exploration, implementation practice, and shipping potential. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Sep 2025. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as an AI systems proof point for builders who need leverage from models, agents, local inference, or AI-assisted workflows.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the strongest workflow into a reproducible demo with a clear before/after result.",
     "status": "Public repo",
     "lastActive": "Sep 2025",
     "remote": "https://github.com/VpkDevs/code-assistant-vibe-buddy-clone.git"
@@ -217,6 +274,9 @@ export const projectAtlas = [
     "category": "ai",
     "categoryLabel": "AI Systems",
     "focus": "LLM infrastructure, prompt systems, and agent workflows",
+    "description": "Whispering Koala is part of Vincent's AI systems work, with catalog signals pointing toward product exploration, implementation practice, and shipping potential. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as an AI systems proof point for builders who need leverage from models, agents, local inference, or AI-assisted workflows.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the strongest workflow into a reproducible demo with a clear before/after result.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/whispering-koala-nudge.git"
@@ -228,6 +288,9 @@ export const projectAtlas = [
     "category": "ai",
     "categoryLabel": "AI Systems",
     "focus": "LLM infrastructure, prompt systems, and agent workflows",
+    "description": "Workspace is part of Vincent's AI systems work, with catalog signals pointing toward product exploration, implementation practice, and shipping potential. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as an AI systems proof point for builders who need leverage from models, agents, local inference, or AI-assisted workflows.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the strongest workflow into a reproducible demo with a clear before/after result.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/AI_WORKSPACE.git"
@@ -239,6 +302,9 @@ export const projectAtlas = [
     "category": "api",
     "categoryLabel": "APIs & Backend",
     "focus": "Backend services, integrations, and platform infrastructure",
+    "description": "Crypto Arbitrage Bot is part of Vincent's backend infrastructure work, with catalog signals pointing toward interactive AI conversation and user-facing assistant behavior and service architecture and data-backed product infrastructure. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as an APIs and backend proof point for products that need reliable data movement, integrations, APIs, or operational plumbing.",
+    "nextAction": "Next pass: verify the repo still builds, then document the contract, add a minimal example client, and expose one useful endpoint publicly.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/CryptoArbitrageBot.git"
@@ -250,6 +316,9 @@ export const projectAtlas = [
     "category": "game",
     "categoryLabel": "Games & Interactive",
     "focus": "Playable systems, RPG worlds, and interactive experiments",
+    "description": "Aethelgard RPG is part of Vincent's interactive systems work, with catalog signals pointing toward playable narrative systems and worldbuilding. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a games and interactive proof point for players, worldbuilders, and creators who care about mechanics, atmosphere, and agency.",
+    "nextAction": "Next pass: verify the repo still builds, then cut it down to one playable loop that can be recorded, shared, and improved from feedback.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/Aethelgard-rpg-planning.git"
@@ -261,6 +330,9 @@ export const projectAtlas = [
     "category": "game",
     "categoryLabel": "Games & Interactive",
     "focus": "Playable systems, RPG worlds, and interactive experiments",
+    "description": "Casino is part of Vincent's interactive systems work, with catalog signals pointing toward commercial research, sourcing, and revenue discovery and playable narrative systems and worldbuilding. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a games and interactive proof point for players, worldbuilders, and creators who care about mechanics, atmosphere, and agency.",
+    "nextAction": "Next pass: verify the repo still builds, then cut it down to one playable loop that can be recorded, shared, and improved from feedback.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/casino-apk.git"
@@ -272,6 +344,9 @@ export const projectAtlas = [
     "category": "game",
     "categoryLabel": "Games & Interactive",
     "focus": "Playable systems, RPG worlds, and interactive experiments",
+    "description": "Dyadia is part of Vincent's interactive systems work, with catalog signals pointing toward playable narrative systems and worldbuilding. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a games and interactive proof point for players, worldbuilders, and creators who care about mechanics, atmosphere, and agency.",
+    "nextAction": "Next pass: verify the repo still builds, then cut it down to one playable loop that can be recorded, shared, and improved from feedback.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/dyadiaGame.git"
@@ -283,6 +358,9 @@ export const projectAtlas = [
     "category": "game",
     "categoryLabel": "Games & Interactive",
     "focus": "Playable systems, RPG worlds, and interactive experiments",
+    "description": "Eternal Ascension is part of Vincent's interactive systems work, with catalog signals pointing toward playable narrative systems and worldbuilding. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a games and interactive proof point for players, worldbuilders, and creators who care about mechanics, atmosphere, and agency.",
+    "nextAction": "Next pass: verify the repo still builds, then cut it down to one playable loop that can be recorded, shared, and improved from feedback.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/eternalAscension.git"
@@ -294,6 +372,9 @@ export const projectAtlas = [
     "category": "game",
     "categoryLabel": "Games & Interactive",
     "focus": "Playable systems, RPG worlds, and interactive experiments",
+    "description": "Fence is part of Vincent's interactive systems work, with catalog signals pointing toward playable narrative systems and worldbuilding. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a games and interactive proof point for players, worldbuilders, and creators who care about mechanics, atmosphere, and agency.",
+    "nextAction": "Next pass: verify the repo still builds, then cut it down to one playable loop that can be recorded, shared, and improved from feedback.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/Fence.git"
@@ -305,6 +386,9 @@ export const projectAtlas = [
     "category": "game",
     "categoryLabel": "Games & Interactive",
     "focus": "Playable systems, RPG worlds, and interactive experiments",
+    "description": "Gacha RPG Mobile is part of Vincent's interactive systems work, with catalog signals pointing toward playable narrative systems and worldbuilding and companion app UX and mobile delivery. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a games and interactive proof point for players, worldbuilders, and creators who care about mechanics, atmosphere, and agency.",
+    "nextAction": "Next pass: verify the repo still builds, then cut it down to one playable loop that can be recorded, shared, and improved from feedback.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/mobile-gacha-rpg-design.git"
@@ -316,6 +400,9 @@ export const projectAtlas = [
     "category": "game",
     "categoryLabel": "Games & Interactive",
     "focus": "Playable systems, RPG worlds, and interactive experiments",
+    "description": "Generic Template is part of Vincent's interactive systems work, with catalog signals pointing toward playable narrative systems and worldbuilding. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a games and interactive proof point for players, worldbuilders, and creators who care about mechanics, atmosphere, and agency.",
+    "nextAction": "Next pass: verify the repo still builds, then cut it down to one playable loop that can be recorded, shared, and improved from feedback.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/generic-template.git"
@@ -327,6 +414,9 @@ export const projectAtlas = [
     "category": "game",
     "categoryLabel": "Games & Interactive",
     "focus": "Playable systems, RPG worlds, and interactive experiments",
+    "description": "Jade Pangolin is part of Vincent's interactive systems work, with catalog signals pointing toward playable narrative systems and worldbuilding. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It is currently cataloged as private or local, so the first job is to verify what runs, what is valuable, and whether a public slice can be safely exposed.",
+    "bestUse": "Best used as a games and interactive proof point for players, worldbuilders, and creators who care about mechanics, atmosphere, and agency.",
+    "nextAction": "Next pass: open the local folder and confirm the current runnable state, then cut it down to one playable loop that can be recorded, shared, and improved from feedback.",
     "status": "Private/local",
     "lastActive": "Feb 2026"
   },
@@ -337,6 +427,9 @@ export const projectAtlas = [
     "category": "game",
     "categoryLabel": "Games & Interactive",
     "focus": "Playable systems, RPG worlds, and interactive experiments",
+    "description": "Jolly Binturong is part of Vincent's interactive systems work, with catalog signals pointing toward playable narrative systems and worldbuilding. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It is currently cataloged as private or local, so the first job is to verify what runs, what is valuable, and whether a public slice can be safely exposed.",
+    "bestUse": "Best used as a games and interactive proof point for players, worldbuilders, and creators who care about mechanics, atmosphere, and agency.",
+    "nextAction": "Next pass: open the local folder and confirm the current runnable state, then cut it down to one playable loop that can be recorded, shared, and improved from feedback.",
     "status": "Private/local",
     "lastActive": "Feb 2026"
   },
@@ -347,6 +440,9 @@ export const projectAtlas = [
     "category": "game",
     "categoryLabel": "Games & Interactive",
     "focus": "Playable systems, RPG worlds, and interactive experiments",
+    "description": "Level Of Julia is part of Vincent's interactive systems work, with catalog signals pointing toward playable narrative systems and worldbuilding. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a games and interactive proof point for players, worldbuilders, and creators who care about mechanics, atmosphere, and agency.",
+    "nextAction": "Next pass: verify the repo still builds, then cut it down to one playable loop that can be recorded, shared, and improved from feedback.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/the-level-of-julia.git"
@@ -358,6 +454,9 @@ export const projectAtlas = [
     "category": "game",
     "categoryLabel": "Games & Interactive",
     "focus": "Playable systems, RPG worlds, and interactive experiments",
+    "description": "Neon Engine is part of Vincent's interactive systems work, with catalog signals pointing toward playable narrative systems and worldbuilding. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a games and interactive proof point for players, worldbuilders, and creators who care about mechanics, atmosphere, and agency.",
+    "nextAction": "Next pass: verify the repo still builds, then cut it down to one playable loop that can be recorded, shared, and improved from feedback.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/neon-engine.git"
@@ -369,6 +468,9 @@ export const projectAtlas = [
     "category": "game",
     "categoryLabel": "Games & Interactive",
     "focus": "Playable systems, RPG worlds, and interactive experiments",
+    "description": "Nexus is part of Vincent's interactive systems work, with catalog signals pointing toward playable narrative systems and worldbuilding. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a games and interactive proof point for players, worldbuilders, and creators who care about mechanics, atmosphere, and agency.",
+    "nextAction": "Next pass: verify the repo still builds, then cut it down to one playable loop that can be recorded, shared, and improved from feedback.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/n-e-x-u-s.git"
@@ -380,6 +482,9 @@ export const projectAtlas = [
     "category": "game",
     "categoryLabel": "Games & Interactive",
     "focus": "Playable systems, RPG worlds, and interactive experiments",
+    "description": "Roo is part of Vincent's interactive systems work, with catalog signals pointing toward playable narrative systems and worldbuilding. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a games and interactive proof point for players, worldbuilders, and creators who care about mechanics, atmosphere, and agency.",
+    "nextAction": "Next pass: verify the repo still builds, then cut it down to one playable loop that can be recorded, shared, and improved from feedback.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/Roo-Game.git"
@@ -391,6 +496,9 @@ export const projectAtlas = [
     "category": "game",
     "categoryLabel": "Games & Interactive",
     "focus": "Playable systems, RPG worlds, and interactive experiments",
+    "description": "RPG Fantasy is part of Vincent's interactive systems work, with catalog signals pointing toward playable narrative systems and worldbuilding. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a games and interactive proof point for players, worldbuilders, and creators who care about mechanics, atmosphere, and agency.",
+    "nextAction": "Next pass: verify the repo still builds, then cut it down to one playable loop that can be recorded, shared, and improved from feedback.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/rpg-fantasy.git"
@@ -402,6 +510,9 @@ export const projectAtlas = [
     "category": "game",
     "categoryLabel": "Games & Interactive",
     "focus": "Playable systems, RPG worlds, and interactive experiments",
+    "description": "RPG Solitary Quest is part of Vincent's interactive systems work, with catalog signals pointing toward playable narrative systems and worldbuilding. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a games and interactive proof point for players, worldbuilders, and creators who care about mechanics, atmosphere, and agency.",
+    "nextAction": "Next pass: verify the repo still builds, then cut it down to one playable loop that can be recorded, shared, and improved from feedback.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/rpg-solitary-quest.git"
@@ -413,6 +524,9 @@ export const projectAtlas = [
     "category": "game",
     "categoryLabel": "Games & Interactive",
     "focus": "Playable systems, RPG worlds, and interactive experiments",
+    "description": "Rscplus is part of Vincent's interactive systems work, with catalog signals pointing toward playable narrative systems and worldbuilding. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a games and interactive proof point for players, worldbuilders, and creators who care about mechanics, atmosphere, and agency.",
+    "nextAction": "Next pass: verify the repo still builds, then cut it down to one playable loop that can be recorded, shared, and improved from feedback.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/rscplus.git"
@@ -424,6 +538,9 @@ export const projectAtlas = [
     "category": "game",
     "categoryLabel": "Games & Interactive",
     "focus": "Playable systems, RPG worlds, and interactive experiments",
+    "description": "Runescape Genre Fusion is part of Vincent's interactive systems work, with catalog signals pointing toward playable narrative systems and worldbuilding. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a games and interactive proof point for players, worldbuilders, and creators who care about mechanics, atmosphere, and agency.",
+    "nextAction": "Next pass: verify the repo still builds, then cut it down to one playable loop that can be recorded, shared, and improved from feedback.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/Run-Escape-genre-fusion.git"
@@ -435,6 +552,9 @@ export const projectAtlas = [
     "category": "game",
     "categoryLabel": "Games & Interactive",
     "focus": "Playable systems, RPG worlds, and interactive experiments",
+    "description": "Runescape Plus is part of Vincent's interactive systems work, with catalog signals pointing toward playable narrative systems and worldbuilding. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a games and interactive proof point for players, worldbuilders, and creators who care about mechanics, atmosphere, and agency.",
+    "nextAction": "Next pass: verify the repo still builds, then cut it down to one playable loop that can be recorded, shared, and improved from feedback.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/runescape-client-plus-plus.git"
@@ -446,6 +566,9 @@ export const projectAtlas = [
     "category": "game",
     "categoryLabel": "Games & Interactive",
     "focus": "Playable systems, RPG worlds, and interactive experiments",
+    "description": "Runeskate is part of Vincent's interactive systems work, with catalog signals pointing toward playable narrative systems and worldbuilding. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a games and interactive proof point for players, worldbuilders, and creators who care about mechanics, atmosphere, and agency.",
+    "nextAction": "Next pass: verify the repo still builds, then cut it down to one playable loop that can be recorded, shared, and improved from feedback.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/runeskate.git"
@@ -457,6 +580,9 @@ export const projectAtlas = [
     "category": "game",
     "categoryLabel": "Games & Interactive",
     "focus": "Playable systems, RPG worlds, and interactive experiments",
+    "description": "Runner Dragon is part of Vincent's interactive systems work, with catalog signals pointing toward playable narrative systems and worldbuilding. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a games and interactive proof point for players, worldbuilders, and creators who care about mechanics, atmosphere, and agency.",
+    "nextAction": "Next pass: verify the repo still builds, then cut it down to one playable loop that can be recorded, shared, and improved from feedback.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/runner-dragon.git"
@@ -468,6 +594,9 @@ export const projectAtlas = [
     "category": "game",
     "categoryLabel": "Games & Interactive",
     "focus": "Playable systems, RPG worlds, and interactive experiments",
+    "description": "Self Playing RPG is part of Vincent's interactive systems work, with catalog signals pointing toward playable narrative systems and worldbuilding. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a games and interactive proof point for players, worldbuilders, and creators who care about mechanics, atmosphere, and agency.",
+    "nextAction": "Next pass: verify the repo still builds, then cut it down to one playable loop that can be recorded, shared, and improved from feedback.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/selfPlayingRPGonGeminiXvinceXkinneyX.git"
@@ -479,6 +608,9 @@ export const projectAtlas = [
     "category": "game",
     "categoryLabel": "Games & Interactive",
     "focus": "Playable systems, RPG worlds, and interactive experiments",
+    "description": "Sports Fantasy is part of Vincent's interactive systems work, with catalog signals pointing toward playable narrative systems and worldbuilding. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a games and interactive proof point for players, worldbuilders, and creators who care about mechanics, atmosphere, and agency.",
+    "nextAction": "Next pass: verify the repo still builds, then cut it down to one playable loop that can be recorded, shared, and improved from feedback.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/sports-fantasy-football.git"
@@ -490,6 +622,9 @@ export const projectAtlas = [
     "category": "game",
     "categoryLabel": "Games & Interactive",
     "focus": "Playable systems, RPG worlds, and interactive experiments",
+    "description": "Survival Lite is part of Vincent's interactive systems work, with catalog signals pointing toward playable narrative systems and worldbuilding. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a games and interactive proof point for players, worldbuilders, and creators who care about mechanics, atmosphere, and agency.",
+    "nextAction": "Next pass: verify the repo still builds, then cut it down to one playable loop that can be recorded, shared, and improved from feedback.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/survival-lite.git"
@@ -501,6 +636,9 @@ export const projectAtlas = [
     "category": "game",
     "categoryLabel": "Games & Interactive",
     "focus": "Playable systems, RPG worlds, and interactive experiments",
+    "description": "The Eternity is part of Vincent's interactive systems work, with catalog signals pointing toward playable narrative systems and worldbuilding. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a games and interactive proof point for players, worldbuilders, and creators who care about mechanics, atmosphere, and agency.",
+    "nextAction": "Next pass: verify the repo still builds, then cut it down to one playable loop that can be recorded, shared, and improved from feedback.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/The-eternity.git"
@@ -512,6 +650,9 @@ export const projectAtlas = [
     "category": "lib",
     "categoryLabel": "Libraries",
     "focus": "Reusable packages, shared logic, and foundation code",
+    "description": "Bun Sandbox is part of Vincent's reusable foundation work, with catalog signals pointing toward product exploration, implementation practice, and shipping potential. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Local build. It is currently cataloged as private or local, so the first job is to verify what runs, what is valuable, and whether a public slice can be safely exposed.",
+    "bestUse": "Best used as a libraries proof point for future Vincent projects that need shared primitives instead of one-off implementation.",
+    "nextAction": "Next pass: open the local folder and confirm the current runnable state, then publish a tiny package-style README with installation, API examples, and a first consumer project.",
     "status": "Private/local",
     "lastActive": "Local build"
   },
@@ -522,6 +663,9 @@ export const projectAtlas = [
     "category": "lib",
     "categoryLabel": "Libraries",
     "focus": "Reusable packages, shared logic, and foundation code",
+    "description": "Fullstack Templates is part of Vincent's reusable foundation work, with catalog signals pointing toward product exploration, implementation practice, and shipping potential. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Local build. It is currently cataloged as private or local, so the first job is to verify what runs, what is valuable, and whether a public slice can be safely exposed.",
+    "bestUse": "Best used as a libraries proof point for future Vincent projects that need shared primitives instead of one-off implementation.",
+    "nextAction": "Next pass: open the local folder and confirm the current runnable state, then publish a tiny package-style README with installation, API examples, and a first consumer project.",
     "status": "Private/local",
     "lastActive": "Local build"
   },
@@ -532,6 +676,9 @@ export const projectAtlas = [
     "category": "lib",
     "categoryLabel": "Libraries",
     "focus": "Reusable packages, shared logic, and foundation code",
+    "description": "Github Skills Intro is part of Vincent's reusable foundation work, with catalog signals pointing toward product exploration, implementation practice, and shipping potential. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Local build. It is currently cataloged as private or local, so the first job is to verify what runs, what is valuable, and whether a public slice can be safely exposed.",
+    "bestUse": "Best used as a libraries proof point for future Vincent projects that need shared primitives instead of one-off implementation.",
+    "nextAction": "Next pass: open the local folder and confirm the current runnable state, then publish a tiny package-style README with installation, API examples, and a first consumer project.",
     "status": "Private/local",
     "lastActive": "Local build"
   },
@@ -542,6 +689,9 @@ export const projectAtlas = [
     "category": "lib",
     "categoryLabel": "Libraries",
     "focus": "Reusable packages, shared logic, and foundation code",
+    "description": "Nexus is part of Vincent's reusable foundation work, with catalog signals pointing toward product exploration, implementation practice, and shipping potential. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Local build. It is currently cataloged as private or local, so the first job is to verify what runs, what is valuable, and whether a public slice can be safely exposed.",
+    "bestUse": "Best used as a libraries proof point for future Vincent projects that need shared primitives instead of one-off implementation.",
+    "nextAction": "Next pass: open the local folder and confirm the current runnable state, then publish a tiny package-style README with installation, API examples, and a first consumer project.",
     "status": "Private/local",
     "lastActive": "Local build"
   },
@@ -552,6 +702,9 @@ export const projectAtlas = [
     "category": "life",
     "categoryLabel": "Life OS",
     "focus": "Personal systems, planning workflows, and productivity tools",
+    "description": "Life OS is part of Vincent's personal operating-system work, with catalog signals pointing toward product exploration, implementation practice, and shipping potential. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Local build. It is currently cataloged as private or local, so the first job is to verify what runs, what is valuable, and whether a public slice can be safely exposed.",
+    "bestUse": "Best used as a Life OS proof point for people trying to convert scattered information, plans, and habits into an actual operating cadence.",
+    "nextAction": "Next pass: open the local folder and confirm the current runnable state, then show the workflow on real data and turn the strongest repeatable routine into a template.",
     "status": "Private/local",
     "lastActive": "Local build"
   },
@@ -562,6 +715,9 @@ export const projectAtlas = [
     "category": "life",
     "categoryLabel": "Life OS",
     "focus": "Personal systems, planning workflows, and productivity tools",
+    "description": "Lyrasissm is part of Vincent's personal operating-system work, with catalog signals pointing toward product exploration, implementation practice, and shipping potential. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Local build. It is currently cataloged as private or local, so the first job is to verify what runs, what is valuable, and whether a public slice can be safely exposed.",
+    "bestUse": "Best used as a Life OS proof point for people trying to convert scattered information, plans, and habits into an actual operating cadence.",
+    "nextAction": "Next pass: open the local folder and confirm the current runnable state, then show the workflow on real data and turn the strongest repeatable routine into a template.",
     "status": "Private/local",
     "lastActive": "Local build"
   },
@@ -572,6 +728,9 @@ export const projectAtlas = [
     "category": "mobile",
     "categoryLabel": "Mobile Apps",
     "focus": "Cross-platform apps and companion experiences",
+    "description": "Apps is part of Vincent's mobile product work, with catalog signals pointing toward companion app UX and mobile delivery. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a mobile apps proof point for users who need a focused companion experience available away from the desktop.",
+    "nextAction": "Next pass: verify the repo still builds, then ship one narrow mobile flow with screenshots, install instructions, and a clear user promise.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/mobile-apps.git"
@@ -583,6 +742,9 @@ export const projectAtlas = [
     "category": "mobile",
     "categoryLabel": "Mobile Apps",
     "focus": "Cross-platform apps and companion experiences",
+    "description": "Fitness Quantum is part of Vincent's mobile product work, with catalog signals pointing toward companion app UX and mobile delivery. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Local build. It is currently cataloged as private or local, so the first job is to verify what runs, what is valuable, and whether a public slice can be safely exposed.",
+    "bestUse": "Best used as a mobile apps proof point for users who need a focused companion experience available away from the desktop.",
+    "nextAction": "Next pass: open the local folder and confirm the current runnable state, then ship one narrow mobile flow with screenshots, install instructions, and a clear user promise.",
     "status": "Private/local",
     "lastActive": "Local build"
   },
@@ -593,6 +755,9 @@ export const projectAtlas = [
     "category": "mobile",
     "categoryLabel": "Mobile Apps",
     "focus": "Cross-platform apps and companion experiences",
+    "description": "Julia is part of Vincent's mobile product work, with catalog signals pointing toward companion app UX and mobile delivery. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Local build. It is currently cataloged as private or local, so the first job is to verify what runs, what is valuable, and whether a public slice can be safely exposed.",
+    "bestUse": "Best used as a mobile apps proof point for users who need a focused companion experience available away from the desktop.",
+    "nextAction": "Next pass: open the local folder and confirm the current runnable state, then ship one narrow mobile flow with screenshots, install instructions, and a clear user promise.",
     "status": "Private/local",
     "lastActive": "Local build"
   },
@@ -603,6 +768,9 @@ export const projectAtlas = [
     "category": "mobile",
     "categoryLabel": "Mobile Apps",
     "focus": "Cross-platform apps and companion experiences",
+    "description": "Legacy Folder is part of Vincent's mobile product work, with catalog signals pointing toward companion app UX and mobile delivery. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Local build. It is currently cataloged as private or local, so the first job is to verify what runs, what is valuable, and whether a public slice can be safely exposed.",
+    "bestUse": "Best used as a mobile apps proof point for users who need a focused companion experience available away from the desktop.",
+    "nextAction": "Next pass: open the local folder and confirm the current runnable state, then ship one narrow mobile flow with screenshots, install instructions, and a clear user promise.",
     "status": "Private/local",
     "lastActive": "Local build"
   },
@@ -613,6 +781,9 @@ export const projectAtlas = [
     "category": "mobile",
     "categoryLabel": "Mobile Apps",
     "focus": "Cross-platform apps and companion experiences",
+    "description": "Mood Tunes is part of Vincent's mobile product work, with catalog signals pointing toward companion app UX and mobile delivery. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Local build. It is currently cataloged as private or local, so the first job is to verify what runs, what is valuable, and whether a public slice can be safely exposed.",
+    "bestUse": "Best used as a mobile apps proof point for users who need a focused companion experience available away from the desktop.",
+    "nextAction": "Next pass: open the local folder and confirm the current runnable state, then ship one narrow mobile flow with screenshots, install instructions, and a clear user promise.",
     "status": "Private/local",
     "lastActive": "Local build"
   },
@@ -623,6 +794,9 @@ export const projectAtlas = [
     "category": "mobile",
     "categoryLabel": "Mobile Apps",
     "focus": "Cross-platform apps and companion experiences",
+    "description": "Photo App is part of Vincent's mobile product work, with catalog signals pointing toward companion app UX and mobile delivery. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Local build. It is currently cataloged as private or local, so the first job is to verify what runs, what is valuable, and whether a public slice can be safely exposed.",
+    "bestUse": "Best used as a mobile apps proof point for users who need a focused companion experience available away from the desktop.",
+    "nextAction": "Next pass: open the local folder and confirm the current runnable state, then ship one narrow mobile flow with screenshots, install instructions, and a clear user promise.",
     "status": "Private/local",
     "lastActive": "Local build"
   },
@@ -633,6 +807,9 @@ export const projectAtlas = [
     "category": "org",
     "categoryLabel": "Workspace Systems",
     "focus": "Project organization, catalogs, and operating infrastructure",
+    "description": "Org Suite is part of Vincent's workspace infrastructure work, with catalog signals pointing toward product exploration, implementation practice, and shipping potential. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Local build. It is currently cataloged as private or local, so the first job is to verify what runs, what is valuable, and whether a public slice can be safely exposed.",
+    "bestUse": "Best used as a workspace systems proof point for AI agents and humans trying to understand, prioritize, and operate a large project surface.",
+    "nextAction": "Next pass: open the local folder and confirm the current runnable state, then connect the catalog to one decision workflow: ship, monetize, archive, or improve.",
     "status": "Private/local",
     "lastActive": "Local build"
   },
@@ -643,6 +820,9 @@ export const projectAtlas = [
     "category": "org",
     "categoryLabel": "Workspace Systems",
     "focus": "Project organization, catalogs, and operating infrastructure",
+    "description": "Prompthub is part of Vincent's workspace infrastructure work, with catalog signals pointing toward AI-assisted development and agent workflow design. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Local build. It is currently cataloged as private or local, so the first job is to verify what runs, what is valuable, and whether a public slice can be safely exposed.",
+    "bestUse": "Best used as a workspace systems proof point for AI agents and humans trying to understand, prioritize, and operate a large project surface.",
+    "nextAction": "Next pass: open the local folder and confirm the current runnable state, then connect the catalog to one decision workflow: ship, monetize, archive, or improve.",
     "status": "Private/local",
     "lastActive": "Local build"
   },
@@ -653,6 +833,9 @@ export const projectAtlas = [
     "category": "tool",
     "categoryLabel": "Tools & Automation",
     "focus": "Developer utilities, automation, and operational helpers",
+    "description": "Accountability Shield is part of Vincent's automation tool work, with catalog signals pointing toward local workflow automation and desktop utility. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Local build. It is currently cataloged as private or local, so the first job is to verify what runs, what is valuable, and whether a public slice can be safely exposed.",
+    "bestUse": "Best used as a tools and automation proof point for operators and developers who want tedious recurring tasks handled with less friction.",
+    "nextAction": "Next pass: open the local folder and confirm the current runnable state, then turn the core utility into a command, UI, or documented workflow that saves measurable time.",
     "status": "Private/local",
     "lastActive": "Local build"
   },
@@ -663,6 +846,9 @@ export const projectAtlas = [
     "category": "tool",
     "categoryLabel": "Tools & Automation",
     "focus": "Developer utilities, automation, and operational helpers",
+    "description": "Auggie is part of Vincent's automation tool work, with catalog signals pointing toward local workflow automation and desktop utility. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a tools and automation proof point for operators and developers who want tedious recurring tasks handled with less friction.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the core utility into a command, UI, or documented workflow that saves measurable time.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/Auggie.git"
@@ -674,6 +860,9 @@ export const projectAtlas = [
     "category": "tool",
     "categoryLabel": "Tools & Automation",
     "focus": "Developer utilities, automation, and operational helpers",
+    "description": "Automation Hub is part of Vincent's automation tool work, with catalog signals pointing toward local workflow automation and desktop utility. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a tools and automation proof point for operators and developers who want tedious recurring tasks handled with less friction.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the core utility into a command, UI, or documented workflow that saves measurable time.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/AutomationHub.git"
@@ -685,6 +874,9 @@ export const projectAtlas = [
     "category": "tool",
     "categoryLabel": "Tools & Automation",
     "focus": "Developer utilities, automation, and operational helpers",
+    "description": "Batch Scripts is part of Vincent's automation tool work, with catalog signals pointing toward local workflow automation and desktop utility. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a tools and automation proof point for operators and developers who want tedious recurring tasks handled with less friction.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the core utility into a command, UI, or documented workflow that saves measurable time.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/batch-scripts.git"
@@ -696,6 +888,9 @@ export const projectAtlas = [
     "category": "tool",
     "categoryLabel": "Tools & Automation",
     "focus": "Developer utilities, automation, and operational helpers",
+    "description": "Browser Extensions is part of Vincent's automation tool work, with catalog signals pointing toward local workflow automation and desktop utility. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Local build. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a tools and automation proof point for operators and developers who want tedious recurring tasks handled with less friction.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the core utility into a command, UI, or documented workflow that saves measurable time.",
     "status": "Public repo",
     "lastActive": "Local build",
     "remote": "https://github.com/VpkDevs/browser-extensions.git"
@@ -707,6 +902,9 @@ export const projectAtlas = [
     "category": "tool",
     "categoryLabel": "Tools & Automation",
     "focus": "Developer utilities, automation, and operational helpers",
+    "description": "Bulk File Changer is part of Vincent's automation tool work, with catalog signals pointing toward local workflow automation and desktop utility. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a tools and automation proof point for operators and developers who want tedious recurring tasks handled with less friction.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the core utility into a command, UI, or documented workflow that saves measurable time.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/bulk-file-changer.git"
@@ -718,6 +916,9 @@ export const projectAtlas = [
     "category": "tool",
     "categoryLabel": "Tools & Automation",
     "focus": "Developer utilities, automation, and operational helpers",
+    "description": "Chromepws is part of Vincent's automation tool work, with catalog signals pointing toward local workflow automation and desktop utility. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a tools and automation proof point for operators and developers who want tedious recurring tasks handled with less friction.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the core utility into a command, UI, or documented workflow that saves measurable time.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/chromepws.git"
@@ -729,6 +930,9 @@ export const projectAtlas = [
     "category": "tool",
     "categoryLabel": "Tools & Automation",
     "focus": "Developer utilities, automation, and operational helpers",
+    "description": "Clipmind is part of Vincent's automation tool work, with catalog signals pointing toward local workflow automation and desktop utility. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Local build. It is currently cataloged as private or local, so the first job is to verify what runs, what is valuable, and whether a public slice can be safely exposed.",
+    "bestUse": "Best used as a tools and automation proof point for operators and developers who want tedious recurring tasks handled with less friction.",
+    "nextAction": "Next pass: open the local folder and confirm the current runnable state, then turn the core utility into a command, UI, or documented workflow that saves measurable time.",
     "status": "Private/local",
     "lastActive": "Local build"
   },
@@ -739,6 +943,9 @@ export const projectAtlas = [
     "category": "tool",
     "categoryLabel": "Tools & Automation",
     "focus": "Developer utilities, automation, and operational helpers",
+    "description": "Code Vault Sync is part of Vincent's automation tool work, with catalog signals pointing toward personal knowledge management and durable memory systems and local workflow automation and desktop utility. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Local build. It is currently cataloged as private or local, so the first job is to verify what runs, what is valuable, and whether a public slice can be safely exposed.",
+    "bestUse": "Best used as a tools and automation proof point for operators and developers who want tedious recurring tasks handled with less friction.",
+    "nextAction": "Next pass: open the local folder and confirm the current runnable state, then turn the core utility into a command, UI, or documented workflow that saves measurable time.",
     "status": "Private/local",
     "lastActive": "Local build"
   },
@@ -749,6 +956,9 @@ export const projectAtlas = [
     "category": "tool",
     "categoryLabel": "Tools & Automation",
     "focus": "Developer utilities, automation, and operational helpers",
+    "description": "Crypto Trading Suite is part of Vincent's automation tool work, with catalog signals pointing toward local workflow automation and desktop utility. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Local build. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a tools and automation proof point for operators and developers who want tedious recurring tasks handled with less friction.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the core utility into a command, UI, or documented workflow that saves measurable time.",
     "status": "Public repo",
     "lastActive": "Local build",
     "remote": "https://github.com/VpkDevs/crypto-trading-suite.git"
@@ -760,6 +970,9 @@ export const projectAtlas = [
     "category": "tool",
     "categoryLabel": "Tools & Automation",
     "focus": "Developer utilities, automation, and operational helpers",
+    "description": "Date Stamper is part of Vincent's automation tool work, with catalog signals pointing toward local workflow automation and desktop utility. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a tools and automation proof point for operators and developers who want tedious recurring tasks handled with less friction.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the core utility into a command, UI, or documented workflow that saves measurable time.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/date-stamper-scripts.git"
@@ -771,6 +984,9 @@ export const projectAtlas = [
     "category": "tool",
     "categoryLabel": "Tools & Automation",
     "focus": "Developer utilities, automation, and operational helpers",
+    "description": "Desktop AI Agent is part of Vincent's automation tool work, with catalog signals pointing toward AI-assisted development and agent workflow design and local workflow automation and desktop utility. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a tools and automation proof point for operators and developers who want tedious recurring tasks handled with less friction.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the core utility into a command, UI, or documented workflow that saves measurable time.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/desktop-ai-agent.git"
@@ -782,6 +998,9 @@ export const projectAtlas = [
     "category": "tool",
     "categoryLabel": "Tools & Automation",
     "focus": "Developer utilities, automation, and operational helpers",
+    "description": "Doc Processing Suite is part of Vincent's automation tool work, with catalog signals pointing toward local workflow automation and desktop utility. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a tools and automation proof point for operators and developers who want tedious recurring tasks handled with less friction.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the core utility into a command, UI, or documented workflow that saves measurable time.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/document-processing-suite.git"
@@ -793,6 +1012,9 @@ export const projectAtlas = [
     "category": "tool",
     "categoryLabel": "Tools & Automation",
     "focus": "Developer utilities, automation, and operational helpers",
+    "description": "Duplicate Cleaner is part of Vincent's automation tool work, with catalog signals pointing toward local workflow automation and desktop utility. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a tools and automation proof point for operators and developers who want tedious recurring tasks handled with less friction.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the core utility into a command, UI, or documented workflow that saves measurable time.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/DuplicateCleanerPro.git"
@@ -804,6 +1026,9 @@ export const projectAtlas = [
     "category": "tool",
     "categoryLabel": "Tools & Automation",
     "focus": "Developer utilities, automation, and operational helpers",
+    "description": "Ebay Auto Lister is part of Vincent's automation tool work, with catalog signals pointing toward commercial research, sourcing, and revenue discovery and local workflow automation and desktop utility. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Local build. It is currently cataloged as private or local, so the first job is to verify what runs, what is valuable, and whether a public slice can be safely exposed.",
+    "bestUse": "Best used as a tools and automation proof point for operators and developers who want tedious recurring tasks handled with less friction.",
+    "nextAction": "Next pass: open the local folder and confirm the current runnable state, then turn the core utility into a command, UI, or documented workflow that saves measurable time.",
     "status": "Private/local",
     "lastActive": "Local build"
   },
@@ -814,6 +1039,9 @@ export const projectAtlas = [
     "category": "tool",
     "categoryLabel": "Tools & Automation",
     "focus": "Developer utilities, automation, and operational helpers",
+    "description": "Exitcode Fixer is part of Vincent's automation tool work, with catalog signals pointing toward local workflow automation and desktop utility. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a tools and automation proof point for operators and developers who want tedious recurring tasks handled with less friction.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the core utility into a command, UI, or documented workflow that saves measurable time.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/ExitCode1060-Fixer.git"
@@ -825,6 +1053,9 @@ export const projectAtlas = [
     "category": "tool",
     "categoryLabel": "Tools & Automation",
     "focus": "Developer utilities, automation, and operational helpers",
+    "description": "File Management is part of Vincent's automation tool work, with catalog signals pointing toward local workflow automation and desktop utility. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a tools and automation proof point for operators and developers who want tedious recurring tasks handled with less friction.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the core utility into a command, UI, or documented workflow that saves measurable time.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/file-management-suite.git"
@@ -836,6 +1067,9 @@ export const projectAtlas = [
     "category": "tool",
     "categoryLabel": "Tools & Automation",
     "focus": "Developer utilities, automation, and operational helpers",
+    "description": "Form Filler is part of Vincent's automation tool work, with catalog signals pointing toward local workflow automation and desktop utility. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a tools and automation proof point for operators and developers who want tedious recurring tasks handled with less friction.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the core utility into a command, UI, or documented workflow that saves measurable time.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/formFiller.git"
@@ -847,6 +1081,9 @@ export const projectAtlas = [
     "category": "tool",
     "categoryLabel": "Tools & Automation",
     "focus": "Developer utilities, automation, and operational helpers",
+    "description": "Function Calls is part of Vincent's automation tool work, with catalog signals pointing toward local workflow automation and desktop utility. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a tools and automation proof point for operators and developers who want tedious recurring tasks handled with less friction.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the core utility into a command, UI, or documented workflow that saves measurable time.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/functionCalls.git"
@@ -858,6 +1095,9 @@ export const projectAtlas = [
     "category": "tool",
     "categoryLabel": "Tools & Automation",
     "focus": "Developer utilities, automation, and operational helpers",
+    "description": "Github Enhancer is part of Vincent's automation tool work, with catalog signals pointing toward local workflow automation and desktop utility. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Local build. It is currently cataloged as private or local, so the first job is to verify what runs, what is valuable, and whether a public slice can be safely exposed.",
+    "bestUse": "Best used as a tools and automation proof point for operators and developers who want tedious recurring tasks handled with less friction.",
+    "nextAction": "Next pass: open the local folder and confirm the current runnable state, then turn the core utility into a command, UI, or documented workflow that saves measurable time.",
     "status": "Private/local",
     "lastActive": "Local build"
   },
@@ -868,6 +1108,9 @@ export const projectAtlas = [
     "category": "tool",
     "categoryLabel": "Tools & Automation",
     "focus": "Developer utilities, automation, and operational helpers",
+    "description": "Huntr is part of Vincent's automation tool work, with catalog signals pointing toward local workflow automation and desktop utility. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a tools and automation proof point for operators and developers who want tedious recurring tasks handled with less friction.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the core utility into a command, UI, or documented workflow that saves measurable time.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/HUNTR.git"
@@ -879,6 +1122,9 @@ export const projectAtlas = [
     "category": "tool",
     "categoryLabel": "Tools & Automation",
     "focus": "Developer utilities, automation, and operational helpers",
+    "description": "Keyboard Suite is part of Vincent's automation tool work, with catalog signals pointing toward local workflow automation and desktop utility. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Local build. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a tools and automation proof point for operators and developers who want tedious recurring tasks handled with less friction.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the core utility into a command, UI, or documented workflow that saves measurable time.",
     "status": "Public repo",
     "lastActive": "Local build",
     "remote": "https://github.com/VpkDevs/keyboard-management-suite.git"
@@ -890,6 +1136,9 @@ export const projectAtlas = [
     "category": "tool",
     "categoryLabel": "Tools & Automation",
     "focus": "Developer utilities, automation, and operational helpers",
+    "description": "Key Commander is part of Vincent's automation tool work, with catalog signals pointing toward local workflow automation and desktop utility. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a tools and automation proof point for operators and developers who want tedious recurring tasks handled with less friction.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the core utility into a command, UI, or documented workflow that saves measurable time.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/key-commander-pro-v1.git"
@@ -901,6 +1150,9 @@ export const projectAtlas = [
     "category": "tool",
     "categoryLabel": "Tools & Automation",
     "focus": "Developer utilities, automation, and operational helpers",
+    "description": "Launcher Pad is part of Vincent's automation tool work, with catalog signals pointing toward local workflow automation and desktop utility. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Local build. It is currently cataloged as private or local, so the first job is to verify what runs, what is valuable, and whether a public slice can be safely exposed.",
+    "bestUse": "Best used as a tools and automation proof point for operators and developers who want tedious recurring tasks handled with less friction.",
+    "nextAction": "Next pass: open the local folder and confirm the current runnable state, then turn the core utility into a command, UI, or documented workflow that saves measurable time.",
     "status": "Private/local",
     "lastActive": "Local build"
   },
@@ -911,6 +1163,9 @@ export const projectAtlas = [
     "category": "tool",
     "categoryLabel": "Tools & Automation",
     "focus": "Developer utilities, automation, and operational helpers",
+    "description": "Management Guardian is part of Vincent's automation tool work, with catalog signals pointing toward local workflow automation and desktop utility. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a tools and automation proof point for operators and developers who want tedious recurring tasks handled with less friction.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the core utility into a command, UI, or documented workflow that saves measurable time.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/management-guardian-central.git"
@@ -922,6 +1177,9 @@ export const projectAtlas = [
     "category": "tool",
     "categoryLabel": "Tools & Automation",
     "focus": "Developer utilities, automation, and operational helpers",
+    "description": "Omni Organizer is part of Vincent's automation tool work, with catalog signals pointing toward local workflow automation and desktop utility. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a tools and automation proof point for operators and developers who want tedious recurring tasks handled with less friction.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the core utility into a command, UI, or documented workflow that saves measurable time.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/omni_organizer.git"
@@ -933,6 +1191,9 @@ export const projectAtlas = [
     "category": "tool",
     "categoryLabel": "Tools & Automation",
     "focus": "Developer utilities, automation, and operational helpers",
+    "description": "Password Manager is part of Vincent's automation tool work, with catalog signals pointing toward local workflow automation and desktop utility. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a tools and automation proof point for operators and developers who want tedious recurring tasks handled with less friction.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the core utility into a command, UI, or documented workflow that saves measurable time.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/PasswordManager.git"
@@ -944,6 +1205,9 @@ export const projectAtlas = [
     "category": "tool",
     "categoryLabel": "Tools & Automation",
     "focus": "Developer utilities, automation, and operational helpers",
+    "description": "Password Utility is part of Vincent's automation tool work, with catalog signals pointing toward local workflow automation and desktop utility. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a tools and automation proof point for operators and developers who want tedious recurring tasks handled with less friction.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the core utility into a command, UI, or documented workflow that saves measurable time.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/password-management-utility.git"
@@ -955,6 +1219,9 @@ export const projectAtlas = [
     "category": "tool",
     "categoryLabel": "Tools & Automation",
     "focus": "Developer utilities, automation, and operational helpers",
+    "description": "Path Manager is part of Vincent's automation tool work, with catalog signals pointing toward local workflow automation and desktop utility. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Local build. It is currently cataloged as private or local, so the first job is to verify what runs, what is valuable, and whether a public slice can be safely exposed.",
+    "bestUse": "Best used as a tools and automation proof point for operators and developers who want tedious recurring tasks handled with less friction.",
+    "nextAction": "Next pass: open the local folder and confirm the current runnable state, then turn the core utility into a command, UI, or documented workflow that saves measurable time.",
     "status": "Private/local",
     "lastActive": "Local build"
   },
@@ -965,6 +1232,9 @@ export const projectAtlas = [
     "category": "tool",
     "categoryLabel": "Tools & Automation",
     "focus": "Developer utilities, automation, and operational helpers",
+    "description": "Project Discovery is part of Vincent's automation tool work, with catalog signals pointing toward local workflow automation and desktop utility. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a tools and automation proof point for operators and developers who want tedious recurring tasks handled with less friction.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the core utility into a command, UI, or documented workflow that saves measurable time.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/ProjectDiscoverySystem.git"
@@ -976,6 +1246,9 @@ export const projectAtlas = [
     "category": "tool",
     "categoryLabel": "Tools & Automation",
     "focus": "Developer utilities, automation, and operational helpers",
+    "description": "Screenpipe is part of Vincent's automation tool work, with catalog signals pointing toward local workflow automation and desktop utility. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a tools and automation proof point for operators and developers who want tedious recurring tasks handled with less friction.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the core utility into a command, UI, or documented workflow that saves measurable time.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/screenpipe.git"
@@ -987,6 +1260,9 @@ export const projectAtlas = [
     "category": "tool",
     "categoryLabel": "Tools & Automation",
     "focus": "Developer utilities, automation, and operational helpers",
+    "description": "Scripts Tools is part of Vincent's automation tool work, with catalog signals pointing toward local workflow automation and desktop utility. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Local build. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a tools and automation proof point for operators and developers who want tedious recurring tasks handled with less friction.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the core utility into a command, UI, or documented workflow that saves measurable time.",
     "status": "Public repo",
     "lastActive": "Local build",
     "remote": "https://github.com/VpkDevs/scripts-tools.git"
@@ -998,6 +1274,9 @@ export const projectAtlas = [
     "category": "tool",
     "categoryLabel": "Tools & Automation",
     "focus": "Developer utilities, automation, and operational helpers",
+    "description": "System Turbo is part of Vincent's automation tool work, with catalog signals pointing toward local workflow automation and desktop utility. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Local build. It is currently cataloged as private or local, so the first job is to verify what runs, what is valuable, and whether a public slice can be safely exposed.",
+    "bestUse": "Best used as a tools and automation proof point for operators and developers who want tedious recurring tasks handled with less friction.",
+    "nextAction": "Next pass: open the local folder and confirm the current runnable state, then turn the core utility into a command, UI, or documented workflow that saves measurable time.",
     "status": "Private/local",
     "lastActive": "Local build"
   },
@@ -1008,6 +1287,9 @@ export const projectAtlas = [
     "category": "tool",
     "categoryLabel": "Tools & Automation",
     "focus": "Developer utilities, automation, and operational helpers",
+    "description": "Tax Filing is part of Vincent's automation tool work, with catalog signals pointing toward local workflow automation and desktop utility. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a tools and automation proof point for operators and developers who want tedious recurring tasks handled with less friction.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the core utility into a command, UI, or documented workflow that saves measurable time.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/Tax-Filing-Tool.git"
@@ -1019,6 +1301,9 @@ export const projectAtlas = [
     "category": "tool",
     "categoryLabel": "Tools & Automation",
     "focus": "Developer utilities, automation, and operational helpers",
+    "description": "Tracking Guardian is part of Vincent's automation tool work, with catalog signals pointing toward visibility, measurement, and decision support and local workflow automation and desktop utility. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a tools and automation proof point for operators and developers who want tedious recurring tasks handled with less friction.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the core utility into a command, UI, or documented workflow that saves measurable time.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/tracking-guardian.git"
@@ -1030,6 +1315,9 @@ export const projectAtlas = [
     "category": "tool",
     "categoryLabel": "Tools & Automation",
     "focus": "Developer utilities, automation, and operational helpers",
+    "description": "Vscode Settings Server is part of Vincent's automation tool work, with catalog signals pointing toward local workflow automation and desktop utility and service architecture and data-backed product infrastructure. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a tools and automation proof point for operators and developers who want tedious recurring tasks handled with less friction.",
+    "nextAction": "Next pass: verify the repo still builds, then turn the core utility into a command, UI, or documented workflow that saves measurable time.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/vscode-settings-server.git"
@@ -1041,6 +1329,9 @@ export const projectAtlas = [
     "category": "web",
     "categoryLabel": "Web Apps",
     "focus": "Web products, SaaS experiments, and browser experiences",
+    "description": "AI Creative Portal is part of Vincent's web product work, with catalog signals pointing toward product exploration, implementation practice, and shipping potential. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Sep 2025. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a web apps proof point for users who need a browser-accessible product with a clear landing page and practical workflow.",
+    "nextAction": "Next pass: verify the repo still builds, then deploy the smallest useful version, add screenshots, and write the offer around the problem solved.",
     "status": "Public repo",
     "lastActive": "Sep 2025",
     "remote": "https://github.com/VpkDevs/ai-creative-portal-void-dreams.git"
@@ -1052,6 +1343,9 @@ export const projectAtlas = [
     "category": "web",
     "categoryLabel": "Web Apps",
     "focus": "Web products, SaaS experiments, and browser experiences",
+    "description": "AI Resource Site is part of Vincent's web product work, with catalog signals pointing toward public presentation, conversion, and trust-building. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a web apps proof point for users who need a browser-accessible product with a clear landing page and practical workflow.",
+    "nextAction": "Next pass: verify the repo still builds, then deploy the smallest useful version, add screenshots, and write the offer around the problem solved.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/ai-resource-site.git"
@@ -1063,6 +1357,9 @@ export const projectAtlas = [
     "category": "web",
     "categoryLabel": "Web Apps",
     "focus": "Web products, SaaS experiments, and browser experiences",
+    "description": "AI Resource Site Minimal is part of Vincent's web product work, with catalog signals pointing toward public presentation, conversion, and trust-building. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a web apps proof point for users who need a browser-accessible product with a clear landing page and practical workflow.",
+    "nextAction": "Next pass: verify the repo still builds, then deploy the smallest useful version, add screenshots, and write the offer around the problem solved.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/aiResourceSite.git"
@@ -1074,6 +1371,9 @@ export const projectAtlas = [
     "category": "web",
     "categoryLabel": "Web Apps",
     "focus": "Web products, SaaS experiments, and browser experiences",
+    "description": "AI Tools Directory is part of Vincent's web product work, with catalog signals pointing toward product exploration, implementation practice, and shipping potential. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Sep 2025. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a web apps proof point for users who need a browser-accessible product with a clear landing page and practical workflow.",
+    "nextAction": "Next pass: verify the repo still builds, then deploy the smallest useful version, add screenshots, and write the offer around the problem solved.",
     "status": "Public repo",
     "lastActive": "Sep 2025",
     "remote": "https://github.com/VpkDevs/ai-tools-directory-platform.git"
@@ -1085,6 +1385,9 @@ export const projectAtlas = [
     "category": "web",
     "categoryLabel": "Web Apps",
     "focus": "Web products, SaaS experiments, and browser experiences",
+    "description": "Appyness is part of Vincent's web product work, with catalog signals pointing toward product exploration, implementation practice, and shipping potential. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a web apps proof point for users who need a browser-accessible product with a clear landing page and practical workflow.",
+    "nextAction": "Next pass: verify the repo still builds, then deploy the smallest useful version, add screenshots, and write the offer around the problem solved.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/appyness.git"
@@ -1096,6 +1399,9 @@ export const projectAtlas = [
     "category": "web",
     "categoryLabel": "Web Apps",
     "focus": "Web products, SaaS experiments, and browser experiences",
+    "description": "Appyness Landing is part of Vincent's web product work, with catalog signals pointing toward public presentation, conversion, and trust-building. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a web apps proof point for users who need a browser-accessible product with a clear landing page and practical workflow.",
+    "nextAction": "Next pass: verify the repo still builds, then deploy the smallest useful version, add screenshots, and write the offer around the problem solved.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/appyness-landing.git"
@@ -1107,6 +1413,9 @@ export const projectAtlas = [
     "category": "web",
     "categoryLabel": "Web Apps",
     "focus": "Web products, SaaS experiments, and browser experiences",
+    "description": "Appyness Major is part of Vincent's web product work, with catalog signals pointing toward product exploration, implementation practice, and shipping potential. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a web apps proof point for users who need a browser-accessible product with a clear landing page and practical workflow.",
+    "nextAction": "Next pass: verify the repo still builds, then deploy the smallest useful version, add screenshots, and write the offer around the problem solved.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/appyness-MAJOR.git"
@@ -1118,6 +1427,9 @@ export const projectAtlas = [
     "category": "web",
     "categoryLabel": "Web Apps",
     "focus": "Web products, SaaS experiments, and browser experiences",
+    "description": "Bolt Any LLM is part of Vincent's web product work, with catalog signals pointing toward product exploration, implementation practice, and shipping potential. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a web apps proof point for users who need a browser-accessible product with a clear landing page and practical workflow.",
+    "nextAction": "Next pass: verify the repo still builds, then deploy the smallest useful version, add screenshots, and write the offer around the problem solved.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/coleam00/bolt.new-any-llm.git"
@@ -1129,6 +1441,9 @@ export const projectAtlas = [
     "category": "web",
     "categoryLabel": "Web Apps",
     "focus": "Web products, SaaS experiments, and browser experiences",
+    "description": "Bolt Fork is part of Vincent's web product work, with catalog signals pointing toward product exploration, implementation practice, and shipping potential. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a web apps proof point for users who need a browser-accessible product with a clear landing page and practical workflow.",
+    "nextAction": "Next pass: verify the repo still builds, then deploy the smallest useful version, add screenshots, and write the offer around the problem solved.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/bolt.newFork.git"
@@ -1140,6 +1455,9 @@ export const projectAtlas = [
     "category": "web",
     "categoryLabel": "Web Apps",
     "focus": "Web products, SaaS experiments, and browser experiences",
+    "description": "Bookmark Manager is part of Vincent's web product work, with catalog signals pointing toward product exploration, implementation practice, and shipping potential. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a web apps proof point for users who need a browser-accessible product with a clear landing page and practical workflow.",
+    "nextAction": "Next pass: verify the repo still builds, then deploy the smallest useful version, add screenshots, and write the offer around the problem solved.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/bookmarkManager.git"
@@ -1151,6 +1469,9 @@ export const projectAtlas = [
     "category": "web",
     "categoryLabel": "Web Apps",
     "focus": "Web products, SaaS experiments, and browser experiences",
+    "description": "Chatbot Nextjs is part of Vincent's web product work, with catalog signals pointing toward interactive AI conversation and user-facing assistant behavior. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Sep 2025. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a web apps proof point for users who need a browser-accessible product with a clear landing page and practical workflow.",
+    "nextAction": "Next pass: verify the repo still builds, then deploy the smallest useful version, add screenshots, and write the offer around the problem solved.",
     "status": "Public repo",
     "lastActive": "Sep 2025",
     "remote": "https://github.com/VpkDevs/chatbot-app-nextjs-ai.git"
@@ -1162,6 +1483,9 @@ export const projectAtlas = [
     "category": "web",
     "categoryLabel": "Web Apps",
     "focus": "Web products, SaaS experiments, and browser experiences",
+    "description": "Comparison Tool is part of Vincent's web product work, with catalog signals pointing toward product exploration, implementation practice, and shipping potential. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a web apps proof point for users who need a browser-accessible product with a clear landing page and practical workflow.",
+    "nextAction": "Next pass: verify the repo still builds, then deploy the smallest useful version, add screenshots, and write the offer around the problem solved.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/comparisonToolApp.git"
@@ -1173,6 +1497,9 @@ export const projectAtlas = [
     "category": "web",
     "categoryLabel": "Web Apps",
     "focus": "Web products, SaaS experiments, and browser experiences",
+    "description": "Content Studio is part of Vincent's web product work, with catalog signals pointing toward product exploration, implementation practice, and shipping potential. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a web apps proof point for users who need a browser-accessible product with a clear landing page and practical workflow.",
+    "nextAction": "Next pass: verify the repo still builds, then deploy the smallest useful version, add screenshots, and write the offer around the problem solved.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/universalContentStudio.git"
@@ -1184,6 +1511,9 @@ export const projectAtlas = [
     "category": "web",
     "categoryLabel": "Web Apps",
     "focus": "Web products, SaaS experiments, and browser experiences",
+    "description": "Dyad Flying Phoenix is part of Vincent's web product work, with catalog signals pointing toward product exploration, implementation practice, and shipping potential. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Mar 2026. It is currently cataloged as private or local, so the first job is to verify what runs, what is valuable, and whether a public slice can be safely exposed.",
+    "bestUse": "Best used as a web apps proof point for users who need a browser-accessible product with a clear landing page and practical workflow.",
+    "nextAction": "Next pass: open the local folder and confirm the current runnable state, then deploy the smallest useful version, add screenshots, and write the offer around the problem solved.",
     "status": "Private/local",
     "lastActive": "Mar 2026"
   },
@@ -1194,6 +1524,9 @@ export const projectAtlas = [
     "category": "web",
     "categoryLabel": "Web Apps",
     "focus": "Web products, SaaS experiments, and browser experiences",
+    "description": "Dyad Hopping Falcon is part of Vincent's web product work, with catalog signals pointing toward product exploration, implementation practice, and shipping potential. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Mar 2026. It is currently cataloged as private or local, so the first job is to verify what runs, what is valuable, and whether a public slice can be safely exposed.",
+    "bestUse": "Best used as a web apps proof point for users who need a browser-accessible product with a clear landing page and practical workflow.",
+    "nextAction": "Next pass: open the local folder and confirm the current runnable state, then deploy the smallest useful version, add screenshots, and write the offer around the problem solved.",
     "status": "Private/local",
     "lastActive": "Mar 2026"
   },
@@ -1204,6 +1537,9 @@ export const projectAtlas = [
     "category": "web",
     "categoryLabel": "Web Apps",
     "focus": "Web products, SaaS experiments, and browser experiences",
+    "description": "Dyad Jolly Axolotl is part of Vincent's web product work, with catalog signals pointing toward product exploration, implementation practice, and shipping potential. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Mar 2026. It is currently cataloged as private or local, so the first job is to verify what runs, what is valuable, and whether a public slice can be safely exposed.",
+    "bestUse": "Best used as a web apps proof point for users who need a browser-accessible product with a clear landing page and practical workflow.",
+    "nextAction": "Next pass: open the local folder and confirm the current runnable state, then deploy the smallest useful version, add screenshots, and write the offer around the problem solved.",
     "status": "Private/local",
     "lastActive": "Mar 2026"
   },
@@ -1214,6 +1550,9 @@ export const projectAtlas = [
     "category": "web",
     "categoryLabel": "Web Apps",
     "focus": "Web products, SaaS experiments, and browser experiences",
+    "description": "Dyad Snuggly Dolphin is part of Vincent's web product work, with catalog signals pointing toward product exploration, implementation practice, and shipping potential. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Mar 2026. It is currently cataloged as private or local, so the first job is to verify what runs, what is valuable, and whether a public slice can be safely exposed.",
+    "bestUse": "Best used as a web apps proof point for users who need a browser-accessible product with a clear landing page and practical workflow.",
+    "nextAction": "Next pass: open the local folder and confirm the current runnable state, then deploy the smallest useful version, add screenshots, and write the offer around the problem solved.",
     "status": "Private/local",
     "lastActive": "Mar 2026"
   },
@@ -1224,6 +1563,9 @@ export const projectAtlas = [
     "category": "web",
     "categoryLabel": "Web Apps",
     "focus": "Web products, SaaS experiments, and browser experiences",
+    "description": "Komprehensif is part of Vincent's web product work, with catalog signals pointing toward product exploration, implementation practice, and shipping potential. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Local build. It is currently cataloged as private or local, so the first job is to verify what runs, what is valuable, and whether a public slice can be safely exposed.",
+    "bestUse": "Best used as a web apps proof point for users who need a browser-accessible product with a clear landing page and practical workflow.",
+    "nextAction": "Next pass: open the local folder and confirm the current runnable state, then deploy the smallest useful version, add screenshots, and write the offer around the problem solved.",
     "status": "Private/local",
     "lastActive": "Local build"
   },
@@ -1234,6 +1576,9 @@ export const projectAtlas = [
     "category": "web",
     "categoryLabel": "Web Apps",
     "focus": "Web products, SaaS experiments, and browser experiences",
+    "description": "Landing is part of Vincent's web product work, with catalog signals pointing toward public presentation, conversion, and trust-building. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a web apps proof point for users who need a browser-accessible product with a clear landing page and practical workflow.",
+    "nextAction": "Next pass: verify the repo still builds, then deploy the smallest useful version, add screenshots, and write the offer around the problem solved.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/Landing.git"
@@ -1245,6 +1590,9 @@ export const projectAtlas = [
     "category": "web",
     "categoryLabel": "Web Apps",
     "focus": "Web products, SaaS experiments, and browser experiences",
+    "description": "Lovable is part of Vincent's web product work, with catalog signals pointing toward product exploration, implementation practice, and shipping potential. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a web apps proof point for users who need a browser-accessible product with a clear landing page and practical workflow.",
+    "nextAction": "Next pass: verify the repo still builds, then deploy the smallest useful version, add screenshots, and write the offer around the problem solved.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/lovable.git"
@@ -1256,6 +1604,9 @@ export const projectAtlas = [
     "category": "web",
     "categoryLabel": "Web Apps",
     "focus": "Web products, SaaS experiments, and browser experiences",
+    "description": "Meta Learning is part of Vincent's web product work, with catalog signals pointing toward product exploration, implementation practice, and shipping potential. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Local build. It is currently cataloged as private or local, so the first job is to verify what runs, what is valuable, and whether a public slice can be safely exposed.",
+    "bestUse": "Best used as a web apps proof point for users who need a browser-accessible product with a clear landing page and practical workflow.",
+    "nextAction": "Next pass: open the local folder and confirm the current runnable state, then deploy the smallest useful version, add screenshots, and write the offer around the problem solved.",
     "status": "Private/local",
     "lastActive": "Local build"
   },
@@ -1266,6 +1617,9 @@ export const projectAtlas = [
     "category": "web",
     "categoryLabel": "Web Apps",
     "focus": "Web products, SaaS experiments, and browser experiences",
+    "description": "Mystical Journey is part of Vincent's web product work, with catalog signals pointing toward product exploration, implementation practice, and shipping potential. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a web apps proof point for users who need a browser-accessible product with a clear landing page and practical workflow.",
+    "nextAction": "Next pass: verify the repo still builds, then deploy the smallest useful version, add screenshots, and write the offer around the problem solved.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/mystical_journey.git"
@@ -1277,6 +1631,9 @@ export const projectAtlas = [
     "category": "web",
     "categoryLabel": "Web Apps",
     "focus": "Web products, SaaS experiments, and browser experiences",
+    "description": "Nightowls is part of Vincent's web product work, with catalog signals pointing toward product exploration, implementation practice, and shipping potential. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Local build. It is currently cataloged as private or local, so the first job is to verify what runs, what is valuable, and whether a public slice can be safely exposed.",
+    "bestUse": "Best used as a web apps proof point for users who need a browser-accessible product with a clear landing page and practical workflow.",
+    "nextAction": "Next pass: open the local folder and confirm the current runnable state, then deploy the smallest useful version, add screenshots, and write the offer around the problem solved.",
     "status": "Private/local",
     "lastActive": "Local build"
   },
@@ -1287,6 +1644,9 @@ export const projectAtlas = [
     "category": "web",
     "categoryLabel": "Web Apps",
     "focus": "Web products, SaaS experiments, and browser experiences",
+    "description": "Omni Exporter is part of Vincent's web product work, with catalog signals pointing toward companion app UX and mobile delivery. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Mar 2026. It is currently cataloged as private or local, so the first job is to verify what runs, what is valuable, and whether a public slice can be safely exposed.",
+    "bestUse": "Best used as a web apps proof point for users who need a browser-accessible product with a clear landing page and practical workflow.",
+    "nextAction": "Next pass: open the local folder and confirm the current runnable state, then deploy the smallest useful version, add screenshots, and write the offer around the problem solved.",
     "status": "Private/local",
     "lastActive": "Mar 2026"
   },
@@ -1297,6 +1657,9 @@ export const projectAtlas = [
     "category": "web",
     "categoryLabel": "Web Apps",
     "focus": "Web products, SaaS experiments, and browser experiences",
+    "description": "Personal Site is part of Vincent's web product work, with catalog signals pointing toward public presentation, conversion, and trust-building. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a web apps proof point for users who need a browser-accessible product with a clear landing page and practical workflow.",
+    "nextAction": "Next pass: verify the repo still builds, then deploy the smallest useful version, add screenshots, and write the offer around the problem solved.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/personal-site.git"
@@ -1308,6 +1671,9 @@ export const projectAtlas = [
     "category": "web",
     "categoryLabel": "Web Apps",
     "focus": "Web products, SaaS experiments, and browser experiences",
+    "description": "Product Comparison Framework is part of Vincent's web product work, with catalog signals pointing toward product exploration, implementation practice, and shipping potential. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a web apps proof point for users who need a browser-accessible product with a clear landing page and practical workflow.",
+    "nextAction": "Next pass: verify the repo still builds, then deploy the smallest useful version, add screenshots, and write the offer around the problem solved.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/digitalProductComparisonFramework.git"
@@ -1319,6 +1685,9 @@ export const projectAtlas = [
     "category": "web",
     "categoryLabel": "Web Apps",
     "focus": "Web products, SaaS experiments, and browser experiences",
+    "description": "Prompt Architect is part of Vincent's web product work, with catalog signals pointing toward AI-assisted development and agent workflow design. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a web apps proof point for users who need a browser-accessible product with a clear landing page and practical workflow.",
+    "nextAction": "Next pass: verify the repo still builds, then deploy the smallest useful version, add screenshots, and write the offer around the problem solved.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/prompt-architect.git"
@@ -1330,6 +1699,9 @@ export const projectAtlas = [
     "category": "web",
     "categoryLabel": "Web Apps",
     "focus": "Web products, SaaS experiments, and browser experiences",
+    "description": "Shipwright is part of Vincent's web product work, with catalog signals pointing toward product exploration, implementation practice, and shipping potential. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Mar 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a web apps proof point for users who need a browser-accessible product with a clear landing page and practical workflow.",
+    "nextAction": "Next pass: verify the repo still builds, then deploy the smallest useful version, add screenshots, and write the offer around the problem solved.",
     "status": "Public repo",
     "lastActive": "Mar 2026",
     "remote": "https://github.com/VpkDevs/Shipwright.git"
@@ -1341,6 +1713,9 @@ export const projectAtlas = [
     "category": "web",
     "categoryLabel": "Web Apps",
     "focus": "Web products, SaaS experiments, and browser experiences",
+    "description": "Sweepbot is part of Vincent's web product work, with catalog signals pointing toward interactive AI conversation and user-facing assistant behavior. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Mar 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a web apps proof point for users who need a browser-accessible product with a clear landing page and practical workflow.",
+    "nextAction": "Next pass: verify the repo still builds, then deploy the smallest useful version, add screenshots, and write the offer around the problem solved.",
     "status": "Public repo",
     "lastActive": "Mar 2026",
     "remote": "https://github.com/VpkDevs/sweepbot.git"
@@ -1352,6 +1727,9 @@ export const projectAtlas = [
     "category": "web",
     "categoryLabel": "Web Apps",
     "focus": "Web products, SaaS experiments, and browser experiences",
+    "description": "Template Aesthetic is part of Vincent's web product work, with catalog signals pointing toward product exploration, implementation practice, and shipping potential. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a web apps proof point for users who need a browser-accessible product with a clear landing page and practical workflow.",
+    "nextAction": "Next pass: verify the repo still builds, then deploy the smallest useful version, add screenshots, and write the offer around the problem solved.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/template-aesthetic.git"
@@ -1363,6 +1741,9 @@ export const projectAtlas = [
     "category": "web",
     "categoryLabel": "Web Apps",
     "focus": "Web products, SaaS experiments, and browser experiences",
+    "description": "Tribute is part of Vincent's web product work, with catalog signals pointing toward product exploration, implementation practice, and shipping potential. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a web apps proof point for users who need a browser-accessible product with a clear landing page and practical workflow.",
+    "nextAction": "Next pass: verify the repo still builds, then deploy the smallest useful version, add screenshots, and write the offer around the problem solved.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/tribute-main.git"
@@ -1374,6 +1755,9 @@ export const projectAtlas = [
     "category": "web",
     "categoryLabel": "Web Apps",
     "focus": "Web products, SaaS experiments, and browser experiences",
+    "description": "Tribute V2 is part of Vincent's web product work, with catalog signals pointing toward product exploration, implementation practice, and shipping potential. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a web apps proof point for users who need a browser-accessible product with a clear landing page and practical workflow.",
+    "nextAction": "Next pass: verify the repo still builds, then deploy the smallest useful version, add screenshots, and write the offer around the problem solved.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/tribute-v2.git"
@@ -1385,6 +1769,9 @@ export const projectAtlas = [
     "category": "web",
     "categoryLabel": "Web Apps",
     "focus": "Web products, SaaS experiments, and browser experiences",
+    "description": "Vibe Coder is part of Vincent's web product work, with catalog signals pointing toward product exploration, implementation practice, and shipping potential. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Local build. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a web apps proof point for users who need a browser-accessible product with a clear landing page and practical workflow.",
+    "nextAction": "Next pass: verify the repo still builds, then deploy the smallest useful version, add screenshots, and write the offer around the problem solved.",
     "status": "Public repo",
     "lastActive": "Local build",
     "remote": "https://github.com/VpkDevs/VibeCoder.git"
@@ -1396,6 +1783,9 @@ export const projectAtlas = [
     "category": "web",
     "categoryLabel": "Web Apps",
     "focus": "Web products, SaaS experiments, and browser experiences",
+    "description": "Vibe OS is part of Vincent's web product work, with catalog signals pointing toward product exploration, implementation practice, and shipping potential. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a web apps proof point for users who need a browser-accessible product with a clear landing page and practical workflow.",
+    "nextAction": "Next pass: verify the repo still builds, then deploy the smallest useful version, add screenshots, and write the offer around the problem solved.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/vibe-os.git"
@@ -1407,6 +1797,9 @@ export const projectAtlas = [
     "category": "web",
     "categoryLabel": "Web Apps",
     "focus": "Web products, SaaS experiments, and browser experiences",
+    "description": "Web Apps is part of Vincent's web product work, with catalog signals pointing toward product exploration, implementation practice, and shipping potential. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Local build. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a web apps proof point for users who need a browser-accessible product with a clear landing page and practical workflow.",
+    "nextAction": "Next pass: verify the repo still builds, then deploy the smallest useful version, add screenshots, and write the offer around the problem solved.",
     "status": "Public repo",
     "lastActive": "Local build",
     "remote": "https://github.com/VpkDevs/web-apps.git"
@@ -1418,6 +1811,9 @@ export const projectAtlas = [
     "category": "web",
     "categoryLabel": "Web Apps",
     "focus": "Web products, SaaS experiments, and browser experiences",
+    "description": "Websites is part of Vincent's web product work, with catalog signals pointing toward public presentation, conversion, and trust-building. The value of this project is not just the code; it is evidence of a larger pattern: taking raw experiments, naming the product lane, and deciding what deserves to become public proof. Last activity is recorded as Feb 2026. It already has a public repository attached, which makes it a better candidate for README cleanup, demo packaging, and portfolio proof.",
+    "bestUse": "Best used as a web apps proof point for users who need a browser-accessible product with a clear landing page and practical workflow.",
+    "nextAction": "Next pass: verify the repo still builds, then deploy the smallest useful version, add screenshots, and write the offer around the problem solved.",
     "status": "Public repo",
     "lastActive": "Feb 2026",
     "remote": "https://github.com/VpkDevs/websites.git"

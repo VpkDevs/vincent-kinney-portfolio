@@ -8,17 +8,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'surface': '#0a0a0a',
-        'surface-secondary': '#1a1a1a',
-        'surface-tertiary': '#232323',
-        'accent': '#4d63ff',
-        'accent-light': '#e0f2ff',
-        'text': '#f5f5f5',
-        'text-secondary': '#a0a0a0',
-        'border': '#333333',
+        'surface': '#0c0b09',
+        'surface-secondary': '#14120f',
+        'surface-tertiary': '#211d17',
+        'accent': '#f6c453',
+        'accent-light': '#fff4c7',
+        'text': '#f7f0df',
+        'text-secondary': '#bdb3a1',
+        'border': '#363027',
       },
       fontFamily: {
-        sans: ['system-ui', '-apple-system', 'sans-serif'],
+        sans: ['Aptos', 'Segoe UI', 'Helvetica Neue', 'sans-serif'],
+        display: ['Georgia', 'Times New Roman', 'serif'],
+        mono: ['Cascadia Mono', 'Consolas', 'monospace'],
       },
       fontSize: {
         '7xl': '4.5rem',

@@ -13,6 +13,9 @@ import {
   ShieldCheck,
   Rocket,
   ClipboardCheck,
+  Handshake,
+  MessageCircle,
+  Send,
 } from 'lucide-react'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
@@ -45,7 +48,7 @@ export default function Home() {
     {
       id: 'shipwright',
       name: 'Shipwright',
-      emoji: '🚀',
+      icon: 'rocket' as const,
       tagline: 'AI system designed to take over unfinished software projects, complete the missing work, and turn them into launchable products.',
       description: 'For founders and teams stuck at "almost shipped": Shipwright is being built to analyze a codebase, finish the missing implementation, run tests, identify blockers, prepare deployment, and package the product for market.',
       tags: ['AI Automation', 'Full-Stack Systems', 'Product Launch'],
@@ -72,7 +75,7 @@ Most developers think shipping is 70% of the work. Shipwright is built around th
     {
       id: 'narrative-engine',
       name: 'Narrative Engine',
-      emoji: '✨',
+      icon: 'sparkles' as const,
       tagline: 'AI director system for single-player campaigns where the AI is the DM. Pre-generates story beats, assets, voice, and video through latency masking.',
       description: 'A next-generation approach to AI-driven narrative. Unlike character chatbots, Narrative Engine treats latency as a design tool. It predicts likely story beats, pre-generates assets (images, voice lines, video clips), and manifests them seamlessly when needed—making the world feel alive and pre-existing, not generated on the fly.',
       tags: ['AI Architecture', 'Narrative Design', 'Real-Time Systems'],
@@ -104,7 +107,7 @@ This is a technique that every game studio, VR platform, and interactive narrati
     {
       id: 'shadowlight',
       name: 'Shadowlight',
-      emoji: '🌑',
+      icon: 'moon' as const,
       tagline: 'Dark fantasy single-player RPG that handles real-life trauma—substance abuse, loss, recovery—with grit and respect.',
       description: 'A narrative-first game where mechanics serve story. Shadowlight weaves real human struggles into a high-fantasy setting, exploring addiction, grief, and redemption with authenticity. It\'s entertainment that matters—where players engage with genuine emotional territory.',
       tags: ['Narrative Design', 'Game Mechanics', 'Authentic Storytelling'],
@@ -249,7 +252,7 @@ People who want games that respect their intelligence. People in recovery who se
 
     return projectAtlas.filter((project) => {
       const matchesCategory = atlasCategory === 'all' || project.category === atlasCategory
-      const searchable = `${project.name} ${project.slug} ${project.categoryLabel} ${project.focus} ${project.status}`.toLowerCase()
+      const searchable = `${project.name} ${project.slug} ${project.categoryLabel} ${project.focus} ${project.description} ${project.bestUse} ${project.nextAction} ${project.status}`.toLowerCase()
       return matchesCategory && (!query || searchable.includes(query))
     })
   }, [atlasCategory, atlasQuery])
@@ -401,137 +404,122 @@ People who want games that respect their intelligence. People in recovery who se
       </section>
 
       {/* PROJECT ATLAS SECTION */}
-      <section id="atlas" className="py-20 px-6 bg-surface-secondary/50 border-t border-border">
-        <div className="max-w-6xl mx-auto">
-          <div className="mb-12 flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8">
-            <div className="max-w-3xl">
-              <p className="text-accent font-semibold mb-3">Project Atlas</p>
-              <h2 className="text-4xl md:text-5xl font-bold mb-4">A broad map of the build surface.</h2>
-              <p className="text-text-secondary text-lg leading-relaxed">
-                The featured projects show depth. This atlas shows range: AI systems, web apps, automation tools, games, mobile experiments, libraries, and workspace infrastructure pulled from the canonical project registry.
+      <section id="atlas" className="atlas-section border-t border-border">
+        <div className="max-w-7xl mx-auto">
+          <div className="atlas-hero">
+            <div className="max-w-4xl">
+              <p className="section-kicker">Project Atlas</p>
+              <h2 className="atlas-heading">A dossier wall for the entire build surface.</h2>
+              <p className="atlas-lede">
+                Each project now has a longer strategic description, a best-use read, and a concrete next pass. The goal is not to make every project look finished. The goal is to make every project legible enough that an AI chief of staff can choose what to ship, monetize, improve, or expose publicly.
               </p>
-              <div className="h-1 w-20 bg-gradient-to-r from-accent to-transparent mt-6"></div>
             </div>
-            <a href="#audit" className="btn btn-primary self-start lg:self-end">
-              Turn one into revenue <ArrowRight size={18} />
+            <a href="#audit" className="btn btn-primary atlas-cta">
+              Turn one into revenue <ArrowRight size={18} aria-hidden="true" />
             </a>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+          <div className="atlas-metrics">
             {[
-              { num: projectAtlas.length, label: 'canonical projects indexed' },
+              { num: projectAtlas.length, label: 'canonical project dossiers' },
               { num: publicRepoCount, label: 'public repo links attached' },
               { num: atlasCategories.length - 1, label: 'product lanes represented' },
               { num: 343, label: 'local projects in the broader catalog' }
             ].map((stat) => (
-              <div key={stat.label} className="rounded-lg border border-accent/20 bg-surface/70 p-5">
-                <div className="text-3xl font-bold text-accent mb-2">{stat.num}</div>
-                <p className="text-sm text-text-secondary leading-relaxed">{stat.label}</p>
+              <div key={stat.label} className="atlas-metric">
+                <div className="atlas-metric__num">{stat.num}</div>
+                <p>{stat.label}</p>
               </div>
             ))}
           </div>
 
-          <div className="mb-6 flex flex-col gap-4">
-            <div className="relative">
-              <Search size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-text-secondary pointer-events-none" />
+          <div className="atlas-console">
+            <div className="relative atlas-search-wrap">
+              <Search size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-text-secondary pointer-events-none" aria-hidden="true" />
               <input
                 type="search"
                 value={atlasQuery}
                 onChange={(event) => setAtlasQuery(event.target.value)}
-                placeholder="Search projects, categories, focus areas"
-                className="w-full pl-11"
+                placeholder="Search names, categories, descriptions, next actions"
+                className="atlas-search w-full pl-11"
                 aria-label="Search project atlas"
               />
             </div>
 
-            <div className="flex flex-wrap gap-2">
+            <div className="atlas-filters">
               {atlasCategories.map((item) => (
                 <button
                   key={item.category}
                   onClick={() => setAtlasCategory(item.category)}
                   aria-pressed={atlasCategory === item.category}
-                  className={`inline-flex items-center gap-2 rounded-md border px-3 py-2 text-sm transition-all duration-300 ${
-                    atlasCategory === item.category
-                      ? 'border-accent bg-accent text-surface shadow-lg shadow-accent/20'
-                      : 'border-border/70 bg-surface/50 text-text-secondary hover:border-accent/60 hover:text-text'
-                  }`}
+                  className="atlas-filter"
                 >
                   <span>{item.label}</span>
-                  <span className={`text-xs ${atlasCategory === item.category ? 'text-surface/80' : 'text-text-secondary/70'}`}>
-                    {item.count}
-                  </span>
+                  <span>{item.count}</span>
                 </button>
               ))}
             </div>
           </div>
 
-          <div className="mb-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-sm text-text-secondary">
-            <span>Showing {filteredAtlas.length} of {projectAtlas.length} indexed projects</span>
+          <div className="atlas-readout">
+            <span>Showing {filteredAtlas.length} of {projectAtlas.length} dossiers</span>
             <span>{atlasCategory === 'all' ? 'All lanes' : atlasCategories.find((item) => item.category === atlasCategory)?.label}</span>
           </div>
 
           {filteredAtlas.length === 0 ? (
-            <div className="rounded-lg border border-border/60 bg-surface/60 p-8 text-center">
-              <p className="text-text-secondary">No projects match that search yet.</p>
+            <div className="atlas-empty">
+              <p>No projects match that search yet.</p>
             </div>
           ) : (
-            <div className="max-h-[760px] overflow-y-auto pr-1 md:pr-3">
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {filteredAtlas.map((project) => (
-                  <article
-                    key={project.id}
-                    className="group min-h-[220px] rounded-lg border border-border/60 bg-surface/70 p-5 hover:border-accent/50 hover:bg-surface-tertiary/30 hover:shadow-lg hover:shadow-accent/10 transition-all duration-300"
-                  >
-                    <div className="mb-4 flex items-start justify-between gap-4">
-                      <div className="min-w-0">
-                        <div className="mb-2 flex items-center gap-2 text-xs font-semibold uppercase text-accent">
-                          <Layers3 size={14} />
-                          <span>{project.categoryLabel}</span>
-                        </div>
-                        <h3 className="text-xl font-bold text-text group-hover:text-accent transition-colors break-words">
-                          {project.name}
-                        </h3>
-                      </div>
-                      <span className={`flex-shrink-0 rounded-md border px-2 py-1 text-[11px] font-semibold ${
-                        project.status === 'Public repo'
-                          ? 'border-accent/40 text-accent bg-accent/5'
-                          : 'border-border/70 text-text-secondary bg-surface/80'
-                      }`}>
-                        {project.status}
+            <div className="atlas-grid">
+              {filteredAtlas.map((project) => (
+                <article key={project.id} data-category={project.category} className="atlas-card">
+                  <div className="atlas-card__topline">
+                    <span className="atlas-category">
+                      <Layers3 size={14} aria-hidden="true" />
+                      {project.categoryLabel}
+                    </span>
+                    <span className="atlas-status">{project.status}</span>
+                  </div>
+
+                  <h3 className="atlas-card__title">{project.name}</h3>
+                  <p className="atlas-card__focus">{project.focus}</p>
+                  <p className="atlas-card__description">{project.description}</p>
+
+                  <div className="atlas-card__intel">
+                    <div>
+                      <span>Best use</span>
+                      <p>{project.bestUse}</p>
+                    </div>
+                    <div>
+                      <span>Next pass</span>
+                      <p>{project.nextAction}</p>
+                    </div>
+                  </div>
+
+                  <div className="atlas-card__footer">
+                    <code>{project.slug}</code>
+                    <div className="atlas-card__links">
+                      <span>
+                        <Code2 size={15} aria-hidden="true" />
+                        {project.lastActive}
                       </span>
+                      {project.remote ? (
+                        <a
+                          href={project.remote.replace(/\.git$/, '')}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={`Open ${project.name} repository`}
+                        >
+                          Repo <ExternalLink size={14} aria-hidden="true" />
+                        </a>
+                      ) : (
+                        <span>Local</span>
+                      )}
                     </div>
-
-                    <p className="text-sm text-text-secondary/90 leading-relaxed mb-5">
-                      {project.focus}
-                    </p>
-
-                    <div className="mt-auto flex flex-col gap-3">
-                      <code className="block rounded-md border border-border/50 bg-black/20 px-3 py-2 text-[11px] text-text-secondary break-all">
-                        {project.slug}
-                      </code>
-                      <div className="flex items-center justify-between gap-3 text-sm">
-                        <span className="inline-flex items-center gap-2 text-text-secondary">
-                          <Code2 size={15} />
-                          {project.lastActive}
-                        </span>
-                        {project.remote ? (
-                          <a
-                            href={project.remote.replace(/\.git$/, '')}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label={`Open ${project.name} repository`}
-                            className="inline-flex items-center gap-1 text-accent hover:text-text"
-                          >
-                            Repo <ExternalLink size={14} />
-                          </a>
-                        ) : (
-                          <span className="text-text-secondary/70">Local</span>
-                        )}
-                      </div>
-                    </div>
-                  </article>
-                ))}
-              </div>
+                  </div>
+                </article>
+              ))}
             </div>
           )}
         </div>
@@ -716,9 +704,9 @@ People who want games that respect their intelligence. People in recovery who se
 
           <div className="space-y-4 mb-10">
             {[
-              { id: 'partnership', title: 'Partnership or Co-Founder Interest', desc: 'Interested in building together', icon: '🤝' },
-              { id: 'product', title: 'Product Feedback or User Inquiry', desc: 'About Shipwright, Narrative Engine, or Shadowlight', icon: '💬' },
-              { id: 'general', title: 'General Inquiry', desc: 'Everything else', icon: '✨' },
+              { id: 'partnership', title: 'Partnership or Co-Founder Interest', desc: 'Interested in building together', Icon: Handshake },
+              { id: 'product', title: 'Product Feedback or User Inquiry', desc: 'About Shipwright, Narrative Engine, or Shadowlight', Icon: MessageCircle },
+              { id: 'general', title: 'General Inquiry', desc: 'Everything else', Icon: Send },
             ].map((option) => (
               <button
                 key={option.id}
@@ -730,7 +718,9 @@ People who want games that respect their intelligence. People in recovery who se
                 }`}
               >
                 <div className="flex items-start gap-4">
-                  <span className="text-2xl flex-shrink-0 group-hover:scale-110 transition-transform">{option.icon}</span>
+                  <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md border border-accent/25 bg-accent/10 text-accent group-hover:border-accent/50 group-hover:bg-accent/15 transition-colors">
+                    <option.Icon size={22} aria-hidden="true" />
+                  </span>
                   <div className="flex-1">
                     <h3 className={`font-semibold mb-1 transition-colors duration-300 ${
                       activeContactForm === option.id ? 'text-accent' : 'text-text group-hover:text-accent'

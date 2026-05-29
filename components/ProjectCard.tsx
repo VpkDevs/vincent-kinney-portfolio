@@ -1,12 +1,12 @@
 'use client'
 
-import { ChevronDown } from 'lucide-react'
+import { ChevronDown, Moon, Rocket, Sparkles } from 'lucide-react'
 
 interface ProjectCardProps {
   project: {
     id: string
     name: string
-    emoji: string
+    icon: 'rocket' | 'sparkles' | 'moon'
     tagline: string
     description: string
     tags: string[]
@@ -20,6 +20,12 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project, isExpanded, onToggle }: ProjectCardProps) {
+  const Icon = {
+    rocket: Rocket,
+    sparkles: Sparkles,
+    moon: Moon,
+  }[project.icon]
+
   return (
     <div className={`card border rounded-lg overflow-hidden transition-all duration-500 ${
       isExpanded
@@ -35,7 +41,9 @@ export default function ProjectCard({ project, isExpanded, onToggle }: ProjectCa
         <div className="flex items-start justify-between gap-6">
           <div className="flex-1">
             <div className="flex items-start gap-4 mb-4">
-              <span className="text-5xl flex-shrink-0 group-hover:scale-110 transition-transform duration-300">{project.emoji}</span>
+              <span className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-md border border-accent/25 bg-accent/10 text-accent group-hover:border-accent/55 group-hover:bg-accent/15 transition-colors duration-300">
+                <Icon size={30} aria-hidden="true" />
+              </span>
               <div className="flex-1">
                 <div className="flex items-baseline gap-3 flex-wrap mb-2">
                   <h3 className="text-2xl md:text-3xl font-bold text-text">{project.name}</h3>

@@ -1,4 +1,4 @@
-import { Mail, GitBranch, ExternalLink } from 'lucide-react'
+import { Mail, GitBranch, ExternalLink, Rocket, Sparkles, Moon } from 'lucide-react'
 
 export default function Footer() {
   return (
@@ -46,15 +46,15 @@ export default function Footer() {
             <h4 className="font-semibold text-text mb-5 group-hover:text-accent transition-colors text-sm uppercase">Featured</h4>
             <ul className="space-y-3">
               <li><a href="#work" className="text-sm text-text-secondary/80 hover:text-accent transition-all duration-300 inline-flex items-center gap-2">
-                <span>🚀</span>
+                <Rocket size={16} aria-hidden="true" />
                 Shipwright
               </a></li>
               <li><a href="#work" className="text-sm text-text-secondary/80 hover:text-accent transition-all duration-300 inline-flex items-center gap-2">
-                <span>✨</span>
+                <Sparkles size={16} aria-hidden="true" />
                 Narrative Engine
               </a></li>
               <li><a href="#work" className="text-sm text-text-secondary/80 hover:text-accent transition-all duration-300 inline-flex items-center gap-2">
-                <span>🌑</span>
+                <Moon size={16} aria-hidden="true" />
                 Shadowlight
               </a></li>
             </ul>
