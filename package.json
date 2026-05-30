@@ -5,11 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "generate:atlas": "node scripts/generate-project-atlas.mjs",
+    "generate:og": "node scripts/render-og-card.mjs",
     "build": "next build",
     "start": "next start",
     "check": "tsc --noEmit --incremental false",
     "lint": "npm run check",
-    "verify": "npm run generate:atlas && npm run check && npm run build"
+    "verify": "npm run generate:atlas && npm run generate:og && npm run check && npm run build"
   },
   "dependencies": {
     "lucide-react": "^1.17.0",

@@ -63,6 +63,7 @@ Remove-Item Env:PROJECTS_REGISTRY
 For a normal local build:
 
 ```powershell
+npm run generate:og
 npm run check
 npm run build
 ```
@@ -76,6 +77,16 @@ Remove-Item Env:GITHUB_PAGES
 ```
 
 The GitHub Pages build writes static assets to `out/` with the `/vincent-kinney-portfolio` base path.
+
+## Social Preview
+
+The Open Graph image is generated from `public/og-atlas-background.png` with exact text rendered by `scripts/render-og-card.mjs`.
+
+```powershell
+npm run generate:og
+```
+
+Launch copy is maintained in `docs/launch-kit.md`.
 
 ## Deployment
 

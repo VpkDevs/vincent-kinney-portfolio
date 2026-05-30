@@ -26,11 +26,20 @@ export const metadata: Metadata = {
     url: siteUrl,
     siteName: 'Vincent Kinney Portfolio',
     type: 'website',
+    images: [
+      {
+        url: '/og-card.png',
+        width: 1200,
+        height: 630,
+        alt: 'Vincent Kinney portfolio: a dossier wall for the entire build surface.',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Vincent Kinney | AI-Native Product Architect',
     description: 'Public proof site, project atlas, and AI App Rescue Audit offer.',
+    images: ['/og-card.png'],
   },
 }
 
